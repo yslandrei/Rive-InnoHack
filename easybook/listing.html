@@ -1,0 +1,661 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <title>Rive - Renting Cars </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--=============== css  ===============-->
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/color.css">
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <!--loader-->
+        <div class="loader-wrap">
+            <div class="pin">
+                <div class="pulse"></div>
+            </div>
+        </div>
+        <!--loader end-->
+        <!-- Main  -->
+        <div id="main">
+            <!-- header-->
+            <header class="main-header">
+                <!-- header-top-->
+                <div class="header-top fl-wrap">
+                    <div class="container">
+                        <div class="logo-holder">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+                        <a href="dashboard-add-listing.html" class="add-hotel">Become a Host <span><i class="far fa-plus"></i></span></a>
+                        <div class="show-reg-form modal-open"><i class="fa fa-sign-in"></i>Sign In</div>
+                        <div class="lang-wrap">
+                            <div class="show-lang"><img src="images/lan/1.png" alt=""> <span>ENG</span><i class="fa fa-caret-down"></i></div>
+                            <ul class="lang-tooltip green-bg">
+                                <li><a href="#"><a>RO</a></li>
+                                <li><a href="#">Dutch</a></li>
+                                <li><a href="#">Italian</a></li>
+                                <li><a href="#">French</a></li>
+                                <li><a href="#">Spanish</a></li>
+                            </ul>
+                        </div>
+                        <div class="currency-wrap">
+                            <div class="show-currency-tooltip"> <span>$ USD <i class="fa fa-caret-down"></i> </span></div>
+                            <ul class="currency-tooltip">
+                                <li><a href="#"><i class="far fa-euro-sign"></i> EUR</a></li>
+                                <li><a href="#"><i class="far fa-euro-sign"></i> RON</a></li>
+                                <li><a href="#"><i class="far fa-pound-sign"></i> GBP</a></li>
+                                <li><a href="#"><i class="far fa-ruble-sign"></i>RUR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- header-top end-->
+                <!-- header-inner-->
+                <div class="header-inner fl-wrap">
+                    <div class="container">
+                        <div class="show-search-button"><span>Search</span> <i class="fas fa-search"></i> </div>
+                        <div class="header-user-menu">
+                            <div class="header-user-name">
+                                <span><img src="images/avatar/1.jpg" alt=""></span>
+                                Account
+                            </div>
+                            <ul>
+                                <li><a href="#"> Edit Profile</a></li>
+                                <li><a href="#">  Rents  </a></li>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                        <div class="home-btn"><a href="index.html"><i class="fas fa-home"></i></a></div>
+                        <div class="nav-button-wrap color-bg">
+                            <div class="nav-button">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="nav-holder main-menu">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="index.html"class="act-link">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="listing.html" >Market</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="wishlist-wrap scrollbar-inner novis_wishlist">
+                            <div class="box-widget-content">
+                                <div class="widget-posts fl-wrap">
+                                    <ul>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/gal/1.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Park Central</a>
+                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> STRADA TEODOR MIHALI 58-60, CLUJ-NAPOCA 400591</a></div>
+                                                <span class="rooms-price">$80 <strong> /  Awg</strong></span>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/gal/1.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Holiday Home</a>
+                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="3"></div>
+                                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  STRADA TEODOR MIHALI 58-60</a></div>
+                                                <span class="rooms-price">$50 <strong> /   Awg</strong></span>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/gal/1.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Moonlight Hotel</a>
+                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>   STRADA TEODOR MIHALI 58-60</a></div>
+                                                <span class="rooms-price">$105 <strong> /  Awg</strong></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-search vis-search">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="header-search-input-item fl-wrap location autocomplete-container">
+                                    <label>Destinatie</label>
+                                    <span class="header-search-input-item-icon"><i class="fal fa-map-marker-alt"></i></span>
+                                    <input type="text" placeholder="Location" class="autocomplete-input" id="autocompleteid" value=""/>
+                                    <a href="#"><i class="fal fa-dot-circle"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="header-search-input-item fl-wrap date-parent">
+                                    <label>Check-out </label>
+                                    <span class="header-search-input-item-icon"><i class="fal fa-calendar-check"></i></span>
+                                    <input type="text" placeholder="Perioada de plecare" name="header-search"   value=""/>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="header-search-input-item fl-wrap">
+                                    <div class="quantity-item">
+                                        <label>Rooms</label>
+                                        <div class="quantity">
+                                            <input type="number" min="1" max="3" step="1" value="1">
+                                        </div>
+                                    </div>
+                                    <div class="quantity-item">
+                                        <label>Adults</label>
+                                        <div class="quantity">
+                                            <input type="number" min="1" max="3" step="1" value="1">
+                                        </div>
+                                    </div>
+                                    <div class="quantity-item">
+                                        <label>Children</label>
+                                        <div class="quantity">
+                                            <input type="number" min="0" max="3" step="1" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- header-search-input-item end -->
+                            <!-- header-search-input-item -->
+
+                            <div class="col-sm-2">
+                                <div class="header-search-input-item fl-wrap">
+                                    <button class="header-search-button" onclick="window.location.href='listing.html'">Search <i class="far fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-header-search"><i class="fal fa-angle-double-up"></i></div>
+                </div>
+            </header>
+            <div id="wrapper">
+                <div class="content">
+                        <div class="map-container column-map right-pos-map fix-map hid-mob-map">
+                            <div id="map-main"></div>
+                            <ul class="mapnavigation">
+                                <li><a href="#" class="prevmap-nav"><i class="fas fa-caret-left"></i> Prev</a></li>
+                                <li><a href="#" class="nextmap-nav">Next <i class="fas fa-caret-right"></i></a></li>
+                            </ul>
+                            <div class="map-close"><i class="fas fa-times"></i></div>
+                        </div>
+                    <div class="col-list-wrap left-list">
+                        <div class="mobile-list-controls fl-wrap">
+                            <div class="container">
+                                <div class="mlc show-hidden-column-map schm"><i class="fal fa-map-marked-alt"></i> Show Map</div>
+                                <div class="mlc show-list-wrap-search"><i class="fal fa-filter"></i> Filter</div>
+                            </div>
+                        </div>
+                        <div class="list-wrap-search fl-wrap lws_mobile" id="lisfw">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="col-list-search-input-item in-loc-dec fl-wrap not-vis-arrow">
+                                            <label>City</label>
+
+                                            <div class="listsearch-input-item">
+                                                <select data-placeholder="City" class="chosen-select">
+                                                    <option value="1" selected>Cluj-Napoca</option>
+                                                    <option value="2">Timisoara</option>
+                                                    <option value="3">Bucuresti</option>
+                                                    <option value="4">Paris</option>
+                                                    <option value="5">Rome</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="col-list-search-input-item fl-wrap location autocomplete-container">
+                                            <label>Destination</label>
+                                            <span class="header-search-input-item-icon"><i class="fal fa-map-marker-alt"></i></span>
+                                            <input type="text" placeholder="Destinatie" class="autocomplete-input" id="autocompleteid3" value=""/>
+                                            <a href="#"><i class="fal fa-dot-circle"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="col-list-search-input-item in-loc-dec date-container  fl-wrap">
+                                            <label>Check-In/Out </label>
+                                            <span class="header-search-input-item-icon"><i class="fal fa-calendar-check"></i></span>
+                                            <input type="text"   placeholder="11/26/2022 - 11/30/2022" name="dates"   value=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-opt-wrap fl-wrap">
+                                    <div class="search-opt-wrap-container">
+                                        <div class="search-input-item">
+                                            <div class="range-slider-title">Prices</div>
+                                            <div class="range-slider-wrap fl-wrap">
+                                                <input class="range-slider" data-from="300" data-to="1200" data-step="50" data-min="50" data-max="2000" data-prefix="$">
+                                            </div>
+                                        </div>
+                                        <div class="search-input-item small-input ">
+                                            <div class="col-list-search-input-item fl-wrap">
+                                                <button class="header-search-button" onclick="window.location.href='listing.html'">Search <i class="far fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                        <!-- col-list-search-input-item end -->
+                                        <!-- hidden-listing-filter -->
+                                        <div class="hidden-listing-filter fl-wrap">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <!--col-list-search-input-item -->
+                                                    <div class="col-list-search-input-item fl-wrap">
+                                                        <h4>Star Rating</h4>
+                                                        <div class="search-opt-container fl-wrap">
+                                                            <!-- Checkboxes -->
+                                                            <ul class="fl-wrap filter-tags">
+                                                                <li class="five-star-rating">
+                                                                    <input id="check-aa2" type="checkbox" name="check" checked>
+                                                                    <label for="check-aa2"><span class="listing-rating card-popup-rainingvis" data-starrating2="5"><span>5 Stele</span></span></label>
+                                                                </li>
+                                                                <li class="four-star-rating">
+                                                                    <input id="check-aa3" type="checkbox" name="check">
+                                                                    <label for="check-aa3"><span class="listing-rating card-popup-rainingvis" data-starrating2="5"><span>4 Stele</span></span></label>
+                                                                </li>
+                                                                <li class="three-star-rating">
+                                                                    <input id="check-aa4" type="checkbox" name="check">
+                                                                    <label for="check-aa4"><span class="listing-rating card-popup-rainingvis" data-starrating2="5"><span>3 Stele</span></span></label>
+                                                                </li>
+                                                            </ul>
+                                                            <!-- Checkboxes end -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="col-list-search-input-item fl-wrap">
+                                                        <h4>Facilitati</h4>
+                                                        <div class="search-opt-container fl-wrap">
+                                                            <ul class="fl-wrap filter-tags half-tags">
+                                                                <li>
+                                                                    <input id="check-cc5" type="checkbox" name="check">
+                                                                    <label for="check-cc5">Fumat permis</label>
+                                                                </li>
+                                                                <li>
+                                                                    <input id="check-ff5" type="checkbox" name="check" checked>
+                                                                    <label for="check-ff5">Cauciucuri de iarna</label>
+                                                                </li>
+                                                                <li>
+                                                                    <input id="check-c4" type="checkbox" name="check">
+                                                                    <label for="check-c4">Aer conditionat</label>
+                                                                </li>
+                                                            </ul>
+                                                            <!-- Checkboxes end -->
+                                                        </div>
+                                                    </div>
+                                                    <!--col-list-search-input-item end-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- hidden-listing-filter end -->
+                                    </div>
+                                    <div class="show-more-filters act-hiddenpanel color3-bg"><i class="fal fa-plus"></i><span>More Options</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--list-wrap-search end -->
+                        <!-- list-main-wrap-->
+                        <div class="list-main-wrap fl-wrap card-listing">
+                            <a class="custom-scroll-link back-to-filters" href="#lisfw"><i class="fas fa-angle-up"></i><span>Back to Filters</span></a>
+                            <div class="container">
+                                <!-- list-main-wrap-title-->
+                                <div class="list-main-wrap-title fl-wrap">
+                                    <h2>Results for: <b class="ysl" >Cluj-Napoca </b></h2>
+                                </div>
+                                <!-- list-main-wrap-title end-->
+                                <!-- list-main-wrap-opt-->
+                                <div class="list-main-wrap-opt fl-wrap">
+                                    <!-- price-opt-->
+                                    <div class="price-opt">
+                                        <span class="price-opt-title">Sort After:</span>
+                                        <div class="listsearch-input-item">
+                                            <select data-placeholder="Popularity" class="chosen-select no-search-select" >
+                                                <option>Popularity</option>
+                                                <option>Rating</option>
+                                                <option>Price: Small to High</option>
+                                                <option>Price: High to Small</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- price-opt end-->
+                                    <!-- price-opt-->
+
+                                    <!-- price-opt end-->
+                                </div>
+                                <!-- list-main-wrap-opt end-->
+                                <!-- listing-item-container -->
+                                <div class="listing-item-container init-grid-items fl-wrap">
+                                    <!-- listing-item  -->
+                                    <div class="listing-item">
+                                        <article class="geodir-category-listing fl-wrap">
+                                            <div class="geodir-category-img">
+                                                <a href="listing-single.html"><img style="height: 320px" src="images/cars/car1.png" alt=""></a>
+
+                                                <div class="geodir-category-opt">
+                                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                                    <div class="rate-class-name">
+                                                        <div class="score"><strong>Very Good</strong>27 Reviews </div>
+                                                        <span>5.0</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="geodir-category-content fl-wrap">
+                                                <div class="geodir-category-content-title fl-wrap">
+                                                    <div class="geodir-category-content-title-item">
+                                                        <h3 class="title-sin_map"><a href="listing-single.html">BMW Seria 3</a></h3>
+                                                        <div class="geodir-category-location fl-wrap"><a href="#0" class="map-item"><i class="fas fa-map-marker-alt"></i> Strada Teodor Mihali 58-60, Cluj-Napoca 400591</a></div>
+                                                    </div>
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                                                <div class="geodir-category-footer fl-wrap">
+                                                    <div class="geodir-category-price"><span>35$ / day</span></div>
+                                                    <div class="geodir-opt-list">
+                                                        <a href="#0" class="map-item"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">Vezi pe harta</span></a>
+                                                        <a href="#" class="geodir-js-favorite"><i class="fal fa-heart"></i><span class="geodir-opt-tooltip">Adauga la favorite</span></a>
+                                                        <a href="#" class="geodir-js-booking"><i class="fal fa-exchange"></i><span class="geodir-opt-tooltip">Directie</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <!-- listing-item end -->
+                                    <!-- listing-item  -->
+                                    <div class="listing-item">
+                                        <article class="geodir-category-listing fl-wrap">
+                                            <div class="geodir-category-img">
+                                                <a href="listing-single.html"><img style="height: 320px" src="images/cars/car2.png" alt=""></a>
+
+                                                <div class="geodir-category-opt">
+                                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                                    <div class="rate-class-name">
+                                                        <div class="score"><strong>Good</strong>12 Reviews </div>
+                                                        <span>4.2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="geodir-category-content fl-wrap">
+                                                <div class="geodir-category-content-title fl-wrap">
+                                                    <div class="geodir-category-content-title-item">
+                                                        <h3 class="title-sin_map"><a href="listing-single.html">Dacia Logan</a></h3>
+                                                        <div class="geodir-category-location fl-wrap"><a href="#1" class="map-item"><i class="fas fa-map-marker-alt"></i> Strada Teodor Mihali 58-60, Cluj-Napoca 400591</a></div>
+                                                    </div>
+                                                </div>
+                                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                                                <div class="geodir-category-footer fl-wrap">
+                                                    <div class="geodir-opt-link">
+                                                        <div class="geodir-category-price"><span>$15 / day</span></div>
+                                                    </div>
+                                                    <div class="geodir-opt-list">
+                                                        <a href="#1" class="map-item"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">Vezi pe harta</span></a>
+                                                        <a href="#" class="geodir-js-favorite"><i class="fal fa-heart"></i><span class="geodir-opt-tooltip">Adauga la favorite</span></a>
+                                                        <a href="#" class="geodir-js-booking"><i class="fal fa-exchange"></i><span class="geodir-opt-tooltip">Directie</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <!-- listing-item end -->
+                                    <!-- listing-item  -->
+                                    <div class="listing-item">
+                                        <article class="geodir-category-listing fl-wrap">
+                                            <div class="geodir-category-img">
+                                                <a href="listing-single.html"><img style="height: 320px" src="images/cars/car3.png" alt=""></a>
+
+                                                <div class="geodir-category-opt">
+                                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                                    <div class="rate-class-name">
+                                                        <div class="score"><strong>Good</strong>6 Reviews </div>
+                                                        <span>4.7</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                                <div class="geodir-category-content-title fl-wrap">
+                                                    <div class="geodir-category-content-title-item">
+                                                        <h3 class="title-sin_map"><a href="listing-single.html">Rolls Royce Ghost</a></h3>
+                                                        <div class="geodir-category-location fl-wrap"><a href="#2" class="map-item"><i class="fas fa-map-marker-alt"></i>Strada Teodor Mihali 58-60, Cluj-Napoca 400591</a></div>
+                                                    </div>
+                                                </div>
+                                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                                                <div class="geodir-category-footer fl-wrap">
+                                                    <div class="geodir-opt-link">
+                                                        <div class="geodir-category-price"><span>$100 / day</span></div>
+                                                    </div>
+                                                    <div class="geodir-opt-list">
+                                                        <a href="#2" class="map-item"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">Vezi pe harta</span></a>
+                                                        <a href="#" class="geodir-js-favorite"><i class="fal fa-heart"></i><span class="geodir-opt-tooltip">Adauga la favorite</span></a>
+                                                        <a href="#" class="geodir-js-booking"><i class="fal fa-exchange"></i><span class="geodir-opt-tooltip">Directie</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <!-- listing-item end -->
+                                    <!-- listing-item  -->
+                                    <div class="listing-item">
+                                        <article class="geodir-category-listing fl-wrap">
+                                            <div class="geodir-category-img">
+                                                <a href="listing-single.html"><img style="height: 320px" src="images/cars/car4.png" alt=""></a>
+
+                                                <div class="geodir-category-opt">
+                                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="3"></div>
+                                                    <div class="rate-class-name">
+                                                        <div class="score"><strong>Pleasant</strong>10 Reviews </div>
+                                                        <span>3.2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                                <div class="geodir-category-content-title fl-wrap">
+                                                    <div class="geodir-category-content-title-item">
+                                                        <h3 class="title-sin_map"><a href="listing-single.html">Mercedes Benz G63</a></h3>
+                                                        <div class="geodir-category-location fl-wrap"><a href="#3" class="map-item"><i class="fas fa-map-marker-alt"></i> Strada Teodor Mihali 58-60, Cluj-Napoca 400591</a></div>
+                                                    </div>
+                                                </div>
+                                                <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+
+                                                <div class="geodir-category-footer fl-wrap">
+                                                    <div class="geodir-opt-link">
+                                                        <div class="geodir-category-price"><span>$150 / day</span></div>
+                                                    </div>
+                                                    <div class="geodir-opt-list">
+                                                        <a href="#3" class="map-item"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">Vezi pe harta</span></a>
+                                                        <a href="#" class="geodir-js-favorite"><i class="fal fa-heart"></i><span class="geodir-opt-tooltip">Adauga la favorite</span></a>
+                                                        <a href="#" class="geodir-js-booking"><i class="fal fa-exchange"></i><span class="geodir-opt-tooltip">Directie</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <!-- listing-item end -->
+                                    <!-- listing-item  -->
+                                    <div class="listing-item">
+                                        <article class="geodir-category-listing fl-wrap">
+                                            <div class="geodir-category-img">
+                                                <a href="listing-single2.html"><img style="height: 320px" src="images/gal/masina1.png" alt=""></a>
+
+                                                <div class="geodir-category-opt">
+                                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                                    <div class="rate-class-name">
+                                                        <div class="score"><strong>Very Good</strong>102 Reviews </div>
+                                                        <span>4.7</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                                <div class="geodir-category-content-title fl-wrap">
+                                                    <div class="geodir-category-content-title-item">
+                                                        <h3 class="title-sin_map"><a href="listing-single2.html">Toyota Rav4</a></h3>
+                                                        <div class="geodir-category-location fl-wrap"><a href="#4" class="map-item"><i class="fas fa-map-marker-alt"></i> Strada Teodor Mihali 58-60, Cluj-Napoca 400591</a></div>
+                                                    </div>
+                                                </div>
+                                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. . </p>
+
+                                                <div class="geodir-category-footer fl-wrap">
+                                                    <div class="geodir-opt-link">
+                                                        <div class="geodir-category-price"><span>$40 / day</span></div>
+                                                    </div>
+                                                    <div class="geodir-opt-list">
+                                                        <a href="#4" class="map-item"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">Vezi pe harta</span></a>
+                                                        <a href="#" class="geodir-js-favorite"><i class="fal fa-heart"></i><span class="geodir-opt-tooltip">Adauga la favorite</span></a>
+                                                        <a href="#" class="geodir-js-booking"><i class="fal fa-exchange"></i><span class="geodir-opt-tooltip">Directie</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="pagination">
+                                    <a href="#" class="prevposts-link"><i class="fa fa-caret-left"></i></a>
+                                    <a href="#"  class="current-page">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#" class="nextposts-link"><i class="fa fa-caret-right"></i></a>
+                                </div>
+                                <!-- pagination end-->
+                            </div>
+                        </div>
+                        <!-- list-main-wrap end-->
+                    </div>
+                    <!--col-list-wrap end -->
+                    <div class="limit-box fl-wrap"></div>
+                </div>
+                <!-- content end-->
+            </div>
+            <!--wrapper end -->
+            <!--footer -->
+            <footer class="main-footer">
+                <div class="footer-inner">
+                    <div class="container">
+                        <div class="footer-widget">
+                            <div class="row">
+                                <div class="col-md-4"><a class="contact-btn color-bg" href="contact.html">Contact Us<i class="fal fa-envelope"></i></a></div>
+                                <div class="col-md-8">
+                                    <div class="customer-support-widget fl-wrap">
+                                        <h4>Client Support: </h4>
+                                        <a href="tel:+19012300888" class="cs-mumber">0730 095 492</a>
+                                        <a href="tel:+19012300888" class="cs-mumber-button color2-bg">Call Now <i class="far fa-phone-volume"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bg">
+                </div>
+                <div class="sub-footer">
+                    <div class="container">
+                        <div class="copyright"> &#169; Rive 2022 .  All rights reserved.</div>
+                        <div class="subfooter-lang">
+                            <div class="subfooter-show-lang"><span>ENG</span><i class="fa fa-caret-up"></i></div>
+                            <ul class="subfooter-lang-tooltip">
+                                <li><a href="#">RO</a></li>
+                                <li><a href="#">Dutch</a></li>
+                                <li><a href="#">Italian</a></li>
+                                <li><a href="#">French</a></li>
+                                <li><a href="#">Spanish</a></li>
+                            </ul>
+                        </div>
+                        <div class="subfooter-nav">
+                            <ul>
+                                <li><a href="#">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--sub-footer end -->
+            </footer>
+            <!--footer end -->
+            <!--register form -->
+            <div class="main-register-wrap modal">
+                <div class="reg-overlay"></div>
+                <div class="main-register-holder">
+                    <div class="main-register fl-wrap">
+                        <div class="close-reg color-bg"><i class="fal fa-times"></i></div>
+                        <ul class="tabs-menu">
+                            <li class="current"><a href="#tab-1"><i class="fal fa-sign-in-alt"></i> Login</a></li>
+                            <li><a href="#tab-2"><i class="fal fa-user-plus"></i> Register</a></li>
+                        </ul>
+                        <!--tabs -->
+                        <div id="tabs-container">
+                            <div class="tab">
+                                <!--tab -->
+                                <div id="tab-1" class="tab-content">
+                                    <h3>Contecteaza-te</h3>
+                                    <div class="custom-form">
+                                        <form method="post"  name="registerform">
+                                            <label>Username or Email Address <span>*</span> </label>
+                                            <input name="email" type="text"   onClick="this.select()" value="">
+                                            <label >Password <span>*</span> </label>
+                                            <input name="password" type="password"   onClick="this.select()" value="" >
+                                            <button type="submit"  class="log-submit-btn"><span>Log In</span></button>
+                                            <div class="clearfix"></div>
+                                            <div class="filter-tags">
+                                                <input id="check-a" type="checkbox" name="check">
+                                                <label for="check-a">Remember me</label>
+                                            </div>
+                                        </form>
+                                        <div class="lost_password">
+                                            <a href="#">Lost Your Password?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--tab end -->
+                                <!--tab -->
+                                <div class="tab">
+                                    <div id="tab-2" class="tab-content">
+                                        <h3>Sign Up <span>Easy<strong>Book</strong></span></h3>
+                                        <div class="custom-form">
+                                            <form method="post"   name="registerform" class="main-register-form" id="main-register-form2">
+                                                <label >Full Name <span>*</span> </label>
+                                                <input name="name" type="text"   onClick="this.select()" value="">
+                                                <label>Email Address <span>*</span></label>
+                                                <input name="email" type="text"  onClick="this.select()" value="">
+                                                <label >Password <span>*</span></label>
+                                                <input name="password" type="password"   onClick="this.select()" value="" >
+                                                <button type="submit"     class="log-submit-btn"  ><span>Register</span></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--tab end -->
+                            </div>
+                            <!--tabs end -->
+                            <div class="log-separator fl-wrap"><span>or</span></div>
+                            <div class="soc-log fl-wrap">
+                                <p>For faster login or register use your social account.</p>
+                                <a href="#" class="facebook-log"><i class="fab fa-facebook-f"></i>Connect with Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--register form end -->
+            <a class="to-top"><i class="fas fa-caret-up"></i></a>
+        </div>
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvEdABOHSerhf3YunSXbWmbDlpqbP1HR0&libraries=places&callback=initAutocomplete"></script>
+        <script type="text/javascript" src="js/mapplugins.js"></script>
+        <script type="text/javascript" src="js/maps.js"></script>
+    </body>
+</html>

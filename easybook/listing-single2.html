@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8" />
+        <title>Rive - Renting Cars </title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <!--=============== css  ===============-->
+        <link type="text/css" rel="stylesheet" href="css/reset.css" />
+        <link type="text/css" rel="stylesheet" href="css/plugins.css" />
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link type="text/css" rel="stylesheet" href="css/color.css" />
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="images/favicon.ico" />
+    </head>
+    <body>
+        <!--loader-->
+        <div class="loader-wrap">
+            <div class="pin">
+                <div class="pulse"></div>
+            </div>
+        </div>
+        <!--loader end-->
+        <!-- Main  -->
+        <div id="main">
+            <!-- header-->
+            <header class="main-header">
+                <!-- header-top-->
+                <div class="header-top fl-wrap">
+                    <div class="container">
+                        <div class="logo-holder">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+                        <a href="dashboard-add-listing.html" class="add-hotel">Become a Host <span><i class="far fa-plus"></i></span></a>
+                        <div class="show-reg-form modal-open"><i class="fa fa-sign-in"></i>Sign In</div>
+                        <div class="lang-wrap">
+                            <div class="show-lang"><img src="images/lan/1.png" alt=""> <span>ENG</span><i class="fa fa-caret-down"></i></div>
+                            <ul class="lang-tooltip green-bg">
+                                <li><a href="#"><a>RO</a></li>
+                                <li><a href="#">Dutch</a></li>
+                                <li><a href="#">Italian</a></li>
+                                <li><a href="#">French</a></li>
+                                <li><a href="#">Spanish</a></li>
+                            </ul>
+                        </div>
+                        <div class="currency-wrap">
+                            <div class="show-currency-tooltip"> <span>$ USD <i class="fa fa-caret-down"></i> </span></div>
+                            <ul class="currency-tooltip">
+                                <li><a href="#"><i class="far fa-euro-sign"></i> EUR</a></li>
+                                <li><a href="#"><i class="far fa-euro-sign"></i> RON</a></li>
+                                <li><a href="#"><i class="far fa-pound-sign"></i> GBP</a></li>
+                                <li><a href="#"><i class="far fa-ruble-sign"></i>RUR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- header-top end-->
+                <!-- header-inner-->
+                <div class="header-inner fl-wrap">
+                    <div class="container">
+                        <div class="show-search-button"><span>Search</span> <i class="fas fa-search"></i> </div>
+                        <div class="header-user-menu">
+                            <div class="header-user-name">
+                                <span><img src="images/avatar/1.jpg" alt=""></span>
+                                Account
+                            </div>
+                            <ul>
+                                <li><a href="#"> Edit Profile</a></li>
+                                <li><a href="#">  Rents  </a></li>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                        <div class="home-btn"><a href="index.html"><i class="fas fa-home"></i></a></div>
+                        <div class="nav-button-wrap color-bg">
+                            <div class="nav-button">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="nav-holder main-menu">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="index.html"class="act-link">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="listing.html" >Market</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="wishlist-wrap scrollbar-inner novis_wishlist">
+                            <div class="box-widget-content">
+                                <div class="widget-posts fl-wrap">
+                                    <ul>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/gal/1.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Park Central</a>
+                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 40 JOURNAL SQUARE PLAZA, NJ, US</a></div>
+                                                <span class="rooms-price">$80 <strong> /  Awg</strong></span>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/gal/1.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Holiday Home</a>
+                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="3"></div>
+                                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 75 PRINCE ST, NY, USA</a></div>
+                                                <span class="rooms-price">$50 <strong> /   Awg</strong></span>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/gal/1.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Moonlight Hotel</a>
+                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  70 BRIGHT ST NEW YORK, USA</a></div>
+                                                <span class="rooms-price">$105 <strong> /  Awg</strong></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-search vis-search">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="header-search-input-item fl-wrap location autocomplete-container">
+                                    <label>Destinatie</label>
+                                    <span class="header-search-input-item-icon"><i class="fal fa-map-marker-alt"></i></span>
+                                    <input type="text" placeholder="Location" class="autocomplete-input" id="autocompleteid" value=""/>
+                                    <a href="#"><i class="fal fa-dot-circle"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="header-search-input-item fl-wrap date-parent">
+                                    <label>Check-out </label>
+                                    <span class="header-search-input-item-icon"><i class="fal fa-calendar-check"></i></span>
+                                    <input type="text" placeholder="Perioada de plecare" name="header-search"   value=""/>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="header-search-input-item fl-wrap">
+                                    <div class="quantity-item">
+                                        <label>Rooms</label>
+                                        <div class="quantity">
+                                            <input type="number" min="1" max="3" step="1" value="1">
+                                        </div>
+                                    </div>
+                                    <div class="quantity-item">
+                                        <label>Adults</label>
+                                        <div class="quantity">
+                                            <input type="number" min="1" max="3" step="1" value="1">
+                                        </div>
+                                    </div>
+                                    <div class="quantity-item">
+                                        <label>Children</label>
+                                        <div class="quantity">
+                                            <input type="number" min="0" max="3" step="1" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- header-search-input-item end -->
+                            <!-- header-search-input-item -->
+
+                            <div class="col-sm-2">
+                                <div class="header-search-input-item fl-wrap">
+                                    <button class="header-search-button" onclick="window.location.href='listing.html'">Search <i class="far fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-header-search"><i class="fal fa-angle-double-up"></i></div>
+                </div>
+            </header>
+            <!--  header end -->
+            <!--  wrapper  -->
+            <div id="wrapper">
+                <!-- content-->
+                <div class="content">
+                    <!--  section  -->
+                    <section
+                        class="grey-blue-bg small-padding scroll-nav-container"
+                    >
+                        <div class="top-dec"></div>
+                        <!--  scroll-nav-wrapper  -->
+                        <div class="scroll-nav-wrapper fl-wrap">
+                            <div class="hidden-map-container fl-wrap">
+                                <input
+                                    id="pac-input"
+                                    class="controls fl-wrap controls-mapwn"
+                                    type="text"
+                                    placeholder="What Nearby ?   Bar , Gym , Restaurant "
+                                />
+                                <div class="map-container">
+                                    <div
+                                        id="singleMap"
+                                        data-latitude="40.7427837"
+                                        data-longitude="-73.11445617675781"
+                                    ></div>
+                                </div>
+                            </div>
+
+                            <div class="clearfix"></div>
+                            <div class="container">
+                                <nav class="scroll-nav scroll-init">
+                                    <ul>
+                                        <li>
+                                            <a class="act-scrlink" href="#sec1"
+                                                >Gallery</a
+                                            >
+                                        </li>
+                                        <li><a href="#sec5">Reviews</a></li>
+                                    </ul>
+                                </nav>
+                                <a href="#" class="show-hidden-map">
+                                    <span>On The Map</span>
+                                    <i class="fal fa-map-marked-alt"></i
+                                ></a>
+                            </div>
+                        </div>
+                        <!--  scroll-nav-wrapper end  -->
+                        <!--   container  -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="list-single-main-container">
+                                        <!-- fixed-scroll-column  -->
+                                        <div class="fixed-scroll-column">
+                                            <div
+                                                class="fixed-scroll-column-item fl-wrap"
+                                            >
+                                                <div
+                                                    class="showshare sfcs fc-button"
+                                                >
+                                                    <i
+                                                        class="far fa-share-alt"
+                                                    ></i
+                                                    ><span>Share </span>
+                                                </div>
+                                                <div
+                                                    class="share-holder fixed-scroll-column-share-container"
+                                                >
+                                                    <div
+                                                        class="share-container isShare"
+                                                    ></div>
+                                                </div>
+                                                <a
+                                                    class="fc-button custom-scroll-link"
+                                                    href="#sec6"
+                                                    ><i
+                                                        class="far fa-comment-alt-check"
+                                                    ></i>
+                                                    <span> Add review </span></a
+                                                >
+                                                <a class="fc-button" href="#"
+                                                    ><i
+                                                        class="far fa-heart"
+                                                    ></i>
+                                                    <span>Save</span></a
+                                                >
+                                                <a
+                                                    class="fc-button"
+                                                    href="booking-single.html"
+                                                    ><i
+                                                        class="far fa-bookmark"
+                                                    ></i>
+                                                    <span> Rent Now </span></a
+                                                >
+                                            </div>
+                                        </div>
+                                        <!-- fixed-scroll-column end   -->
+                                        <div
+                                            class="list-single-main-media fl-wrap"
+                                            id="sec1"
+                                        >
+                                            <div
+                                                class="single-slider-wrapper fl-wrap"
+                                            >
+                                                <div class="slider-for fl-wrap">
+                                                    <div
+                                                        class="slick-slide-item"
+                                                    >
+                                                        <img
+                                                            src="images/gal/masina1.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="slick-slide-item"
+                                                    >
+                                                        <img
+                                                            src="images/gal/masina2.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="slick-slide-item"
+                                                    >
+                                                        <img
+                                                            src="images/gal/masina3.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="slick-slide-item"
+                                                    >
+                                                        <img
+                                                            src="images/gal/masina4.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="slick-slide-item"
+                                                    >
+                                                        <img
+                                                            src="images/gal/masina5.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="slick-slide-item"
+                                                    >
+                                                        <img
+                                                            src="images/gal/masina6.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="swiper-button-prev sw-btn"
+                                                >
+                                                    <i
+                                                        class="fal fa-long-arrow-left"
+                                                    ></i>
+                                                </div>
+                                                <div
+                                                    class="swiper-button-next sw-btn"
+                                                >
+                                                    <i
+                                                        class="fal fa-long-arrow-right"
+                                                    ></i>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="single-slider-wrapper fl-wrap"
+                                            >
+                                                <div class="slider-nav fl-wrap">
+                                                    <div
+                                                        class="slick-slide-item"
+                                                    >
+                                                        <img
+                                                            src="images/gal/masina1.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="slick-slide-item"
+                                                    >
+                                                        <img
+                                                            src="images/gal/masina2.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="slick-slide-item"
+                                                    >
+                                                        <img
+                                                            src="images/gal/masina3.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="slick-slide-item"
+                                                    >
+                                                        <img
+                                                            src="images/gal/masina4.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="slick-slide-item"
+                                                    >
+                                                        <img
+                                                            src="images/gal/masina5.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="slick-slide-item"
+                                                    >
+                                                        <img
+                                                            src="images/gal/masina6.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <!--  flat-hero-container -->
+                                    <div class="flat-hero-container fl-wrap">
+                                        <div
+                                            class="box-widget-item-header fl-wrap"
+                                        >
+                                            <h3>Toyota Rav4</h3>
+                                            <div class="listing-rating-wrap">
+                                                <div
+                                                    class="listing-rating card-popup-rainingvis"
+                                                    data-starrating2="5"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="list-single-hero-price fl-wrap"
+                                        >
+                                            Price<span> $ 40 / day</span>
+                                        </div>
+                                        <!--reviews-score-wrap-->
+                                        <div class="reviews-score-wrap fl-wrap">
+                                            <div
+                                                class="rate-class-name-wrap fl-wrap"
+                                            >
+                                                <div class="rate-class-name">
+                                                    <span>4.5</span>
+                                                    <div class="score">
+                                                        <strong
+                                                            >Very Good</strong
+                                                        >2 Reviews
+                                                    </div>
+                                                </div>
+                                                <a
+                                                    href="#sec6"
+                                                    class="color-bg custom-scroll-link"
+                                                    >Add Review
+                                                    <i
+                                                        class="far fa-comment-alt-check"
+                                                    ></i
+                                                ></a>
+                                            </div>
+                                            <div class="review-score-detail">
+                                                <!-- review-score-detail-list-->
+                                                <div
+                                                    class="review-score-detail-list"
+                                                >
+                                                    <!-- rate item-->
+                                                    <div
+                                                        class="rate-item fl-wrap"
+                                                    >
+                                                        <div
+                                                            class="rate-item-title fl-wrap"
+                                                        >
+                                                            <span
+                                                                >Cleanliness</span
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="rate-item-bg"
+                                                            data-percent="100%"
+                                                        >
+                                                            <div
+                                                                class="rate-item-line color-bg"
+                                                            ></div>
+                                                        </div>
+                                                        <div
+                                                            class="rate-item-percent"
+                                                        >
+                                                            5.0
+                                                        </div>
+                                                    </div>
+                                                    <!-- rate item end-->
+                                                    <!-- rate item-->
+                                                    <div
+                                                        class="rate-item fl-wrap"
+                                                    >
+                                                        <div
+                                                            class="rate-item-title fl-wrap"
+                                                        >
+                                                            <span>Comfort</span>
+                                                        </div>
+                                                        <div
+                                                            class="rate-item-bg"
+                                                            data-percent="90%"
+                                                        >
+                                                            <div
+                                                                class="rate-item-line color-bg"
+                                                            ></div>
+                                                        </div>
+                                                        <div
+                                                            class="rate-item-percent"
+                                                        >
+                                                            5.0
+                                                        </div>
+                                                    </div>
+                                                    <!-- rate item end-->
+                                                    <!-- rate item-->
+                                                    <div
+                                                        class="rate-item fl-wrap"
+                                                    >
+                                                        <div
+                                                            class="rate-item-title fl-wrap"
+                                                        >
+                                                            <span
+                                                                >Performance</span
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="rate-item-bg"
+                                                            data-percent="80%"
+                                                        >
+                                                            <div
+                                                                class="rate-item-line color-bg"
+                                                            ></div>
+                                                        </div>
+                                                        <div
+                                                            class="rate-item-percent"
+                                                        >
+                                                            4.0
+                                                        </div>
+                                                    </div>
+                                                    <!-- rate item end-->
+                                                    <!-- rate item-->
+                                                    <div
+                                                        class="rate-item fl-wrap"
+                                                    >
+                                                        <div
+                                                            class="rate-item-title fl-wrap"
+                                                        >
+                                                            <span>Safety</span>
+                                                        </div>
+                                                        <div
+                                                            class="rate-item-bg"
+                                                            data-percent="90%"
+                                                        >
+                                                            <div
+                                                                class="rate-item-line color-bg"
+                                                            ></div>
+                                                        </div>
+                                                        <div
+                                                            class="rate-item-percent"
+                                                        >
+                                                            4.5
+                                                        </div>
+                                                    </div>
+                                                    <!-- rate item end-->
+                                                </div>
+                                                <!-- review-score-detail-list end-->
+                                            </div>
+                                        </div>
+                                        <!-- reviews-score-wrap end -->
+                                        <a
+                                            href="booking-single.html"
+                                            class="btn flat-btn color2-bg big-btn float-btn image-popup"
+                                            >Rent Now<i
+                                                class="far fa-bookmark"
+                                            ></i
+                                        ></a>
+                                    </div>
+                                    <!--   flat-hero-container end -->
+                                </div>
+                            </div>
+                            <!--   row  -->
+                            <div class="row">
+                                <!--   datails -->
+                                <div class="col-md-8">
+                                    <div class="list-single-main-container">
+                                        <!-- list-single-header end -->
+                                            
+                                        <!--   list-single-main-item -->
+                                        <div
+                                            class="list-single-main-item fl-wrap"
+                                        >
+                                            <div
+                                                class="list-single-main-item-title fl-wrap"
+                                            >
+                                                <h3>About Car</h3>
+                                            </div>
+                                            <p>
+                                                Praesent eros turpis, commodo
+                                                vel justo at, pulvinar mollis
+                                                eros. Mauris aliquet eu quam id
+                                                ornare. Morbi ac quam enim. Cras
+                                                vitae nulla condimentum, semper
+                                                dolor non, faucibus dolor.
+                                                Vivamus adipiscing eros quis
+                                                orci fringilla, sed pretium
+                                                lectus viverra. Pellentesque
+                                                habitant morbi tristique
+                                                senectus et netus et malesuada
+                                                fames ac turpis egestas. Donec
+                                                nec velit non odio aliquam
+                                                suscipit. Sed non neque
+                                                faucibus, condimentum lectus at,
+                                                accumsan enim. Fusce pretium
+                                                egestas cursus. Etiam
+                                                consectetur, orci vel rutrum
+                                                volutpat, odio odio pretium
+                                                nisiodo tellus libero et urna.
+                                                Sed commodo ipsum ligula, id
+                                                volutpat risus vehicula in.
+                                                Pellentesque non massa eu nibh
+                                                posuere bibendum non sed enim.
+                                                Maecenas lobortis nulla sem, vel
+                                                egestas .
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit.
+                                                Maecenas in pulvinar neque.
+                                                Nulla finibus lobortis pulvinar.
+                                                Donec a consectetur nulla. Nulla
+                                                posuere sapien vitae lectus
+                                                suscipit, et pulvinar nisi
+                                                tincidunt. Aliquam erat
+                                                volutpat. Curabitur convallis
+                                                fringilla diam sed aliquam. Sed
+                                                tempor iaculis massa faucibus
+                                                feugiat. In fermentum facilisis
+                                                massa, a consequat .
+                                            </p>
+                                        </div>
+                                        <!--   list-single-main-item end -->
+                                        <!--   list-single-main-item -->
+                                     
+                                        <!--   list-single-main-item end -->
+                                        <!-- accordion-->
+                                        
+                                        <!-- list-single-main-item end -->
+                                        <!-- list-single-main-item -->
+                                        <div
+                                            class="list-single-main-item fl-wrap"
+                                            id="sec5"
+                                        >
+                                            <div
+                                                class="list-single-main-item-title fl-wrap"
+                                            >
+                                                <h3>
+                                                    Reviews
+                                                    <span> 2 </span>
+                                                </h3>
+                                            </div>
+                                            <div class="reviews-comments-wrap">
+                                                <!-- reviews-comments-item -->
+                                                <div
+                                                    class="reviews-comments-item"
+                                                >
+                                                    <div
+                                                        class="review-comments-avatar"
+                                                    >
+                                                        <img
+                                                            src="images/avatar/1.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="reviews-comments-item-text"
+                                                    >
+                                                        <h4>
+                                                            <a href="#"
+                                                                >Alexandru Vancea</a
+                                                            >
+                                                        </h4>
+                                                        <div
+                                                            class="review-score-user"
+                                                        >
+                                                            <span>4.4</span>
+                                                            <strong
+                                                                >Good</strong
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="clearfix"
+                                                        ></div>
+                                                        <p>
+                                                            " Donec quam felis,
+                                                            ultricies nec,
+                                                            pellentesque eu,
+                                                            pretium quis, sem.
+                                                            Nulla consequat
+                                                            massa quis enim.
+                                                            Donec pede justo,
+                                                            fringilla vel,
+                                                            aliquet nec,
+                                                            vulputate eget,
+                                                            arcu. In enim justo,
+                                                            rhoncus ut,
+                                                            imperdiet a,
+                                                            venenatis vitae,
+                                                            justo. Nullam dictum
+                                                            felis eu pede mollis
+                                                            pretium. "
+                                                        </p>
+                                                        <div
+                                                            class="reviews-comments-item-date"
+                                                        >
+                                                            <span
+                                                                ><i
+                                                                    class="far fa-calendar-check"
+                                                                ></i
+                                                                >12 April
+                                                                2022</span
+                                                            ><a href="#"
+                                                                ><i
+                                                                    class="fal fa-reply"
+                                                                ></i>
+                                                                Reply</a
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--reviews-comments-item end-->
+                                                <!-- reviews-comments-item -->
+                                                <div
+                                                    class="reviews-comments-item"
+                                                >
+                                                    <div
+                                                        class="review-comments-avatar"
+                                                    >
+                                                        <img
+                                                            src="images/avatar/1.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="reviews-comments-item-text"
+                                                    >
+                                                        <h4>
+                                                            <a href="#"
+                                                                >Alexandru Vancea</a
+                                                            >
+                                                        </h4>
+                                                        <div
+                                                            class="review-score-user"
+                                                        >
+                                                            <span>4.7</span>
+                                                            <strong
+                                                                >Very
+                                                                Good</strong
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="clearfix"
+                                                        ></div>
+                                                        <p>
+                                                            " Lorem ipsum dolor
+                                                            sit amet,
+                                                            consectetur
+                                                            adipiscing elit.
+                                                            Nunc posuere
+                                                            convallis purus non
+                                                            cursus. Cras metus
+                                                            neque, gravida
+                                                            sodales massa ut. "
+                                                        </p>
+                                                        <div
+                                                            class="reviews-comments-item-date"
+                                                        >
+                                                            <span
+                                                                ><i
+                                                                    class="far fa-calendar-check"
+                                                                ></i
+                                                                >03 December
+                                                                2022</span
+                                                            ><a href="#"
+                                                                ><i
+                                                                    class="fal fa-reply"
+                                                                ></i>
+                                                                Reply</a
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--reviews-comments-item end-->
+                                            </div>
+                                        </div>
+                                        <!-- list-single-main-item end -->
+                                        <!-- list-single-main-item -->
+                                        <div
+                                            class="list-single-main-item fl-wrap"
+                                            id="sec6"
+                                        >
+                                            <div
+                                                class="list-single-main-item-title fl-wrap"
+                                            >
+                                                <h3>Add Review</h3>
+                                            </div>
+                                            <!-- Add Review Box -->
+                                            <div
+                                                id="add-review"
+                                                class="add-review-box"
+                                            >
+                                                <!-- Review Comment -->
+                                                <form
+                                                    id="add-comment"
+                                                    class="add-comment custom-form"
+                                                    name="rangeCalc"
+                                                >
+                                                    <fieldset>
+                                                        <div
+                                                            class="review-score-form fl-wrap"
+                                                        >
+                                                            <div
+                                                                class="review-range-container"
+                                                            >
+                                                                <!-- review-range-item-->
+                                                                <div
+                                                                    class="review-range-item"
+                                                                >
+                                                                    <div
+                                                                        class="range-slider-title"
+                                                                    >
+                                                                        Cleanliness
+                                                                    </div>
+                                                                    <div
+                                                                        class="range-slider-wrap"
+                                                                    >
+                                                                        <input
+                                                                            type="text"
+                                                                            class="rate-range"
+                                                                            data-min="0"
+                                                                            data-max="5"
+                                                                            name="rgcl"
+                                                                            data-step="1"
+                                                                            value="4"
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                                <!-- review-range-item end -->
+                                                                <!-- review-range-item-->
+                                                                <div
+                                                                    class="review-range-item"
+                                                                >
+                                                                    <div
+                                                                        class="range-slider-title"
+                                                                    >
+                                                                        Comfort
+                                                                    </div>
+                                                                    <div
+                                                                        class="range-slider-wrap"
+                                                                    >
+                                                                        <input
+                                                                            type="text"
+                                                                            class="rate-range"
+                                                                            data-min="0"
+                                                                            data-max="5"
+                                                                            name="rgcl"
+                                                                            data-step="1"
+                                                                            value="1"
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                                <!-- review-range-item end -->
+                                                                <!-- review-range-item-->
+                                                                <div
+                                                                    class="review-range-item"
+                                                                >
+                                                                    <div
+                                                                        class="range-slider-title"
+                                                                    >
+                                                                        Performance
+                                                                    </div>
+                                                                    <div
+                                                                        class="range-slider-wrap"
+                                                                    >
+                                                                        <input
+                                                                            type="text"
+                                                                            class="rate-range"
+                                                                            data-min="0"
+                                                                            data-max="5"
+                                                                            name="rgcl"
+                                                                            data-step="1"
+                                                                            value="5"
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                                <!-- review-range-item end -->
+                                                                <!-- review-range-item-->
+                                                                <div
+                                                                    class="review-range-item"
+                                                                >
+                                                                    <div
+                                                                        class="range-slider-title"
+                                                                    >
+                                                                        Safety
+                                                                    </div>
+                                                                    <div
+                                                                        class="range-slider-wrap"
+                                                                    >
+                                                                        <input
+                                                                            type="text"
+                                                                            class="rate-range"
+                                                                            data-min="0"
+                                                                            data-max="5"
+                                                                            name="rgcl"
+                                                                            data-step="1"
+                                                                            value="3"
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                                <!-- review-range-item end -->
+                                                            </div>
+                                                            <div
+                                                                class="review-total"
+                                                            >
+                                                                <span
+                                                                    ><input
+                                                                        type="text"
+                                                                        name="rg_total"
+                                                                        value=""
+                                                                        data-form="AVG({rgcl})"
+                                                                        value="0"
+                                                                /></span>
+                                                                <strong
+                                                                    >Your
+                                                                    Score</strong
+                                                                >
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-md-6"
+                                                            >
+                                                                <label
+                                                                    ><i
+                                                                        class="fal fa-user"
+                                                                    ></i
+                                                                ></label>
+                                                                <input
+                                                                    type="text"
+                                                                    placeholder="Your Name *"
+                                                                    value=""
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6"
+                                                            >
+                                                                <label
+                                                                    ><i
+                                                                        class="fal fa-envelope"
+                                                                    ></i>
+                                                                </label>
+                                                                <input
+                                                                    type="text"
+                                                                    placeholder="Email Address*"
+                                                                    value=""
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <textarea
+                                                            cols="40"
+                                                            rows="3"
+                                                            placeholder="Your Review:"
+                                                        ></textarea>
+                                                    </fieldset>
+                                                    <button
+                                                        class="btn big-btn flat-btn float-btn color2-bg"
+                                                        style="margin-top: 30px"
+                                                    >
+                                                        Submit Review
+                                                        <i
+                                                            class="fal fa-paper-plane"
+                                                        ></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                            <!-- Add Review Box / End -->
+                                        </div>
+                                        <!-- list-single-main-item end -->
+                                    </div>
+                                </div>
+                                <!--   datails end  -->
+                                <!--   sidebar  -->
+                                <div class="col-md-4">
+                                    <!--box-widget-wrap -->
+                                    <div class="box-widget-wrap">
+                                        <!--box-widget-item -->
+                                        <div class="box-widget-item fl-wrap">
+                                            <div
+                                                class="box-widget counter-widget"
+                                                data-countDate="09/12/2019"
+                                            >
+                                                <div
+                                                    class="banner-wdget fl-wrap"
+                                                >
+                                                    <div class="overlay"></div>
+                                                    <div
+                                                        class="bg"
+                                                        data-bg="images/bg/1.jpg"
+                                                    ></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--box-widget-item end -->
+                                        <!--box-widget-item -->
+                                        
+                                        <!--box-widget-item end -->
+                                        <!--box-widget-item -->
+                                        
+                                        <!--box-widget-item end -->
+                                        <!--box-widget-item -->
+                                        
+                                        <!--box-widget-item end -->
+                                        <!--box-widget-item -->
+                                      
+                                        <!--box-widget-item end -->
+                                        <!--box-widget-item -->
+                                        <!--box-widget-item -->
+                                       
+                                        <!--box-widget-item end -->
+                                    </div>
+                                    <!--box-widget-wrap end -->
+                                </div>
+                                <!--   sidebar end  -->
+                            </div>
+                            <!--   row end  -->
+                        </div>
+                        <!--   container  end  -->
+                    </section>
+                    <!--  section  end-->
+                </div>
+                <!-- content end-->
+                <div class="limit-box fl-wrap"></div>
+            </div>
+            <!--wrapper end -->
+            <!--footer -->
+            <footer class="main-footer">
+                <!--subscribe-wrap-->
+                
+                <!--subscribe-wrap end -->
+                <!--footer-inner-->
+               
+                <!--sub-footer-->
+                <div class="sub-footer">
+                    <div class="container">
+                        <div class="copyright">
+                            &#169; Rive 2022 . All rights reserved.
+                        </div>
+                        <div class="subfooter-lang">
+                            <div class="subfooter-show-lang">
+                                <span>Eng</span><i class="fa fa-caret-up"></i>
+                            </div>
+                            <ul class="subfooter-lang-tooltip">
+                                <li><a href="#">Dutch</a></li>
+                                <li><a href="#">Italian</a></li>
+                                <li><a href="#">French</a></li>
+                                <li><a href="#">Spanish</a></li>
+                            </ul>
+                        </div>
+                        <div class="subfooter-nav">
+                            <ul>
+                                <li><a href="#">Terms of use</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--sub-footer end -->
+            </footer>
+            <!--footer end -->
+            <!--map-modal -->
+            <div class="map-modal-wrap">
+                <div class="map-modal-wrap-overlay"></div>
+                <div class="map-modal-item">
+                    <div class="map-modal-container fl-wrap">
+                        <h3>Hotel Title</h3>
+                        <div class="map-modal fl-wrap">
+                            <div
+                                id="singleMap"
+                                data-latitude="40.7"
+                                data-longitude="-73.1"
+                            ></div>
+                        </div>
+                        <a href="#" class="btn color2-bg"
+                            >View Details <i class="fal fa-angle-right"></i
+                        ></a>
+                        <div class="map-modal-close">
+                            <i class="far fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--map-modal end -->
+            <!--register form -->
+            <div class="main-register-wrap modal">
+                <div class="reg-overlay"></div>
+                <div class="main-register-holder">
+                    <div class="main-register fl-wrap">
+                        <div class="close-reg color-bg">
+                            <i class="fal fa-times"></i>
+                        </div>
+                        <ul class="tabs-menu">
+                            <li class="current">
+                                <a href="#tab-1"
+                                    ><i class="fal fa-sign-in-alt"></i> Login</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#tab-2"
+                                    ><i class="fal fa-user-plus"></i>
+                                    Register</a
+                                >
+                            </li>
+                        </ul>
+                        <!--tabs -->
+                        <div id="tabs-container">
+                            <div class="tab">
+                                <!--tab -->
+                                <div id="tab-1" class="tab-content">
+                                    <h3>
+                                        Sign In
+                                        <span>Easy<strong>Book</strong></span>
+                                    </h3>
+                                    <div class="custom-form">
+                                        <form method="post" name="registerform">
+                                            <label
+                                                >Username or Email Address
+                                                <span>*</span>
+                                            </label>
+                                            <input
+                                                name="email"
+                                                type="text"
+                                                onClick="this.select()"
+                                                value=""
+                                            />
+                                            <label
+                                                >Password <span>*</span>
+                                            </label>
+                                            <input
+                                                name="password"
+                                                type="password"
+                                                onClick="this.select()"
+                                                value=""
+                                            />
+                                            <button
+                                                type="submit"
+                                                class="log-submit-btn"
+                                            >
+                                                <span>Log In</span>
+                                            </button>
+                                            <div class="clearfix"></div>
+                                            <div class="filter-tags">
+                                                <input
+                                                    id="check-a"
+                                                    type="checkbox"
+                                                    name="check"
+                                                />
+                                                <label for="check-a"
+                                                    >Remember me</label
+                                                >
+                                            </div>
+                                        </form>
+                                        <div class="lost_password">
+                                            <a href="#">Lost Your Password?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--tab end -->
+                                <!--tab -->
+                                <div class="tab">
+                                    <div id="tab-2" class="tab-content">
+                                        <h3>
+                                            Sign Up
+                                            <span
+                                                >Easy<strong>Book</strong></span
+                                            >
+                                        </h3>
+                                        <div class="custom-form">
+                                            <form
+                                                method="post"
+                                                name="registerform"
+                                                class="main-register-form"
+                                                id="main-register-form2"
+                                            >
+                                                <label
+                                                    >Full Name <span>*</span>
+                                                </label>
+                                                <input
+                                                    name="name"
+                                                    type="text"
+                                                    onClick="this.select()"
+                                                    value=""
+                                                />
+                                                <label
+                                                    >Email Address
+                                                    <span>*</span></label
+                                                >
+                                                <input
+                                                    name="email"
+                                                    type="text"
+                                                    onClick="this.select()"
+                                                    value=""
+                                                />
+                                                <label
+                                                    >Password
+                                                    <span>*</span></label
+                                                >
+                                                <input
+                                                    name="password"
+                                                    type="password"
+                                                    onClick="this.select()"
+                                                    value=""
+                                                />
+                                                <button
+                                                    type="submit"
+                                                    class="log-submit-btn"
+                                                >
+                                                    <span>Register</span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--tab end -->
+                            </div>
+                            <!--tabs end -->
+                            <div class="log-separator fl-wrap">
+                                <span>or</span>
+                            </div>
+                            <div class="soc-log fl-wrap">
+                                <p>
+                                    For faster login or register use your social
+                                    account.
+                                </p>
+                                <a href="#" class="facebook-log"
+                                    ><i class="fab fa-facebook-f"></i>Connect
+                                    with Facebook</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--register form end -->
+            <a class="to-top"><i class="fas fa-caret-up"></i></a>
+            <!--ajax-modal-container-->
+            <div class="ajax-modal-overlay"></div>
+            <div class="ajax-modal-container">
+                <!--ajax-modal -->
+                <div class="ajax-loader">
+                    <div class="ajax-loader-cirle"></div>
+                </div>
+                <div id="ajax-modal" class="fl-wrap"></div>
+                <!--ajax-modal-container end -->
+            </div>
+            <!--ajax-modal-container end -->
+        </div>
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOURAPIKEYHERE&libraries=places&callback=initAutocomplete"></script>
+        <script type="text/javascript" src="js/map-single.js"></script>
+    </body>
+</html>

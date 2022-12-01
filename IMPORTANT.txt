@@ -1,0 +1,4 @@
+upload files from a folder 'easybook' to web server or local server to test
+
+
+Important!     Contact form work  , video background (youtube or vimeo) and ajax rooms  - work only on a local server or host.

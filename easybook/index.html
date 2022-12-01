@@ -1,0 +1,454 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <title>Rive - Renting Cars </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--=============== css  ===============-->
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/color.css">
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <!--loader-->
+        <div class="loader-wrap">
+            <div class="pin">
+                <div class="pulse"></div>
+            </div>
+        </div>
+        <!--loader end-->
+        <!-- Main  -->
+        <div id="main">
+            <!-- header-->
+            <header class="main-header">
+                <!-- header-top-->
+                <div class="header-top fl-wrap">
+                    <div class="container">
+                        <div class="logo-holder">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+                        <a href="dashboard-add-listing.html" class="add-hotel">Become a Host <span><i class="far fa-plus"></i></span></a>
+                        <div class="show-reg-form modal-open"><i class="fa fa-sign-in"></i>Sign In</div>
+                        <div class="lang-wrap">
+                            <div class="show-lang"><img src="images/lan/1.png" alt=""> <span>ENG</span><i class="fa fa-caret-down"></i></div>
+                            <ul class="lang-tooltip green-bg">
+                                <li><a href="#"><a>RO</a></li>
+                                <li><a href="#">Dutch</a></li>
+                                <li><a href="#">Italian</a></li>
+                                <li><a href="#">French</a></li>
+                                <li><a href="#">Spanish</a></li>
+                            </ul>
+                        </div>
+                        <div class="currency-wrap">
+                            <div class="show-currency-tooltip"> <span>$ USD <i class="fa fa-caret-down"></i> </span></div>
+                            <ul class="currency-tooltip">
+                                <li><a href="#"><i class="far fa-euro-sign"></i> EUR</a></li>
+                                <li><a href="#"><i class="far fa-euro-sign"></i> RON</a></li>
+                                <li><a href="#"><i class="far fa-pound-sign"></i> GBP</a></li>
+                                <li><a href="#"><i class="far fa-ruble-sign"></i>RUR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- header-top end-->
+                <!-- header-inner-->
+                <div class="header-inner fl-wrap">
+                    <div class="container">
+                        <div class="show-search-button"><span>Search</span> <i class="fas fa-search"></i> </div>
+                        <div class="header-user-menu">
+                            <div class="header-user-name">
+                                <span><img src="images/avatar/1.jpg" alt=""></span>
+                                Account
+                            </div>
+                            <ul>
+                                <li><a href="#"> Edit Profile</a></li>
+                                <li><a href="#">  Rents  </a></li>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                        <div class="home-btn"><a href="index.html"><i class="fas fa-home"></i></a></div>
+                        <div class="nav-button-wrap color-bg">
+                            <div class="nav-button">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="nav-holder main-menu">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="index.html"class="act-link">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="listing.html" >Market</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="wishlist-wrap scrollbar-inner novis_wishlist">
+                            <div class="box-widget-content">
+                                <div class="widget-posts fl-wrap">
+                                    <ul>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/gal/1.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Park Central</a>
+                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 40 JOURNAL SQUARE PLAZA, NJ, US</a></div>
+                                                <span class="rooms-price">$80 <strong> /  Awg</strong></span>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/gal/1.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Holiday Home</a>
+                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="3"></div>
+                                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 75 PRINCE ST, NY, USA</a></div>
+                                                <span class="rooms-price">$50 <strong> /   Awg</strong></span>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/gal/1.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Moonlight Hotel</a>
+                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  70 BRIGHT ST NEW YORK, USA</a></div>
+                                                <span class="rooms-price">$105 <strong> /  Awg</strong></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-search vis-search">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="header-search-input-item fl-wrap location autocomplete-container">
+                                    <label>Destinatie</label>
+                                    <span class="header-search-input-item-icon"><i class="fal fa-map-marker-alt"></i></span>
+                                    <input type="text" placeholder="Location" class="autocomplete-input" id="autocompleteid" value=""/>
+                                    <a href="#"><i class="fal fa-dot-circle"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="header-search-input-item fl-wrap date-parent">
+                                    <label>Check-out </label>
+                                    <span class="header-search-input-item-icon"><i class="fal fa-calendar-check"></i></span>
+                                    <input type="text" placeholder="Perioada de plecare" name="header-search"   value=""/>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="header-search-input-item fl-wrap">
+                                    <div class="quantity-item">
+                                        <label>Rooms</label>
+                                        <div class="quantity">
+                                            <input type="number" min="1" max="3" step="1" value="1">
+                                        </div>
+                                    </div>
+                                    <div class="quantity-item">
+                                        <label>Adults</label>
+                                        <div class="quantity">
+                                            <input type="number" min="1" max="3" step="1" value="1">
+                                        </div>
+                                    </div>
+                                    <div class="quantity-item">
+                                        <label>Children</label>
+                                        <div class="quantity">
+                                            <input type="number" min="0" max="3" step="1" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- header-search-input-item end -->
+                            <!-- header-search-input-item -->
+
+                            <div class="col-sm-2">
+                                <div class="header-search-input-item fl-wrap">
+                                    <button class="header-search-button" onclick="window.location.href='listing.html'">Search <i class="far fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-header-search"><i class="fal fa-angle-double-up"></i></div>
+                </div>
+            </header>
+            <!--  header end -->
+            <!--  wrapper  -->
+            <div id="wrapper">
+                <!-- content-->
+                <div class="content">
+                    <!--section -->
+                    <section class="hero-section" data-scrollax-parent="true" id="sec1">
+                        <div class="hero-parallax">
+                            <div class="bg"  data-bg="images/bg/1.png" data-scrollax="properties: { translateY: '200px' }"></div>
+                            <div class="overlay op7"></div>
+                        </div>
+                        <div class="hero-section-wrap fl-wrap">
+                            <div class="container">
+                                <div class="home-intro">
+                                    <div class="section-title-separator"><span></span></div>
+                                    <h2 class>Find your drive</h2>
+                                    <span class="section-separator"></span>
+                                    <h3>Let's start sharing cars together with Rive</h3>
+                                </div>
+                                <div class="main-search-input-wrap">
+                                    <div class="main-search-input fl-wrap">
+                                        <div class="main-search-input-item location" id="autocomplete-container">
+                                            <span class="inpt_dec"><i class="fal fa-map-marker"></i></span>
+                                            <input type="text" placeholder="City"value=""/>
+                                            <a href="#"><i class="fal fa-dot-circle"></i></a>
+                                        </div>
+                                        <div class="main-search-input-item main-date-parent main-search-input-item_small">
+                                            <span class="inpt_dec"><i class="fal fa-calendar-check"></i></span> <input type="text" placeholder="Check In/Out" name="main-input-search"   value=""/>
+                                        </div>
+
+                                        <button class="main-search-button color2-bg" onclick="window.location.href='listing.html'">Search <i class="fal fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-sec-link">
+                            <div class="container"><a href="#sec2" class="custom-scroll-link color-bg"><i class="fal fa-angle-double-down"></i></a></div>
+                        </div>
+                    </section>
+                    <!-- section end -->
+                    <!--section -->
+                    <section id="sec2">
+                        <div class="container">
+                            <div class="section-title">
+                                <div class="section-title-separator"><span></span></div>
+                                <h2>Popular Cities</h2>
+                                <span class="section-separator"></span>
+                                <p>Explore some of the best cars from around the city from our hosts.</p>
+                            </div>
+						 </div>
+                            <!-- portfolio start -->
+                            <div class="gallery-items fl-wrap mr-bot spad home-grid">
+                                <!-- gallery-item-->
+                                <div class="gallery-item">
+                                    <div class="grid-item-holder">
+                                        <div class="listing-item-grid">
+                                            <div class="listing-counter"><span>93 </span> Cars</div>
+                                            <img  src="images/city/rome.jpg"   alt="">
+                                            <div class="listing-item-cat">
+                                                <h3><a href="listing.html">Rome</a></h3>
+                                                <div class="weather-grid"   data-grcity="Rome"></div>
+                                                <div class="clearfix"></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item gallery-item-second">
+                                    <div class="grid-item-holder">
+                                        <div class="listing-item-grid">
+                                            <img  src="images/city/paris.jpg"   alt="">
+                                            <div class="listing-counter"><span>128 </span> Cars</div>
+                                            <div class="listing-item-cat">
+                                                <h3><a href="listing.html">Paris</a></h3>
+                                                <div class="weather-grid"   data-grcity="Paris"></div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item">
+                                    <div class="grid-item-holder">
+                                        <div class="listing-item-grid">
+                                            <div class="listing-counter"><span>68</span> Cars</div>
+                                            <img  src="images/city/cluj.jpeg"   alt="">
+                                            <div class="listing-item-cat">
+                                                <h3><a href="listing.html">Cluj</a></h3>
+                                                <div class="weather-grid"   data-grcity="London"></div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item">
+                                    <div class="grid-item-holder">
+                                        <div class="listing-item-grid">
+                                            <div class="listing-counter"><span>57</span> Cars</div>
+                                            <img  src="images/city/bucuresti.jpg"   alt="">
+                                            <div class="listing-item-cat">
+                                                <h3><a href="listing.html">Bucuresti</a></h3>
+                                                <div class="weather-grid"   data-grcity="Dubai"></div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                                <!-- gallery-item-->
+                                <div class="gallery-item">
+                                    <div class="grid-item-holder">
+                                        <div class="listing-item-grid">
+                                            <div class="listing-counter"><span>23</span> Cars</div>
+                                            <img  src="images/city/timisoara.jpg"   alt="">
+                                            <div class="listing-item-cat">
+                                                <h3><a href="listing.html">Timisoara</a></h3>
+                                                <div class="weather-grid"   data-grcity="New York"></div>
+                                                <div class="clearfix"></div>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- gallery-item end-->
+                            </div>
+                            <!-- portfolio end -->
+                            <a href="listing.html" class="btn    color-bg">Explore All Cities<i class="fas fa-caret-right"></i></a>
+                    </section>
+                    <!-- section end -->
+                    <!-- section-->
+
+                    <!-- section end -->
+                    <!--section -->
+
+
+                    <!--section -->
+                    <section class="color-bg hidden-section">
+                        <div class="wave-bg wave-bg2"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <!-- -->
+                                    <div class="colomn-text  pad-top-column-text fl-wrap">
+                                        <div class="colomn-text-title">
+                                            <h3>Coming Soon</h3>
+                                            <p>Our app is still in progress...</p>
+                                            <a href="#" class=" down-btn color3-bg"><i class="fab fa-apple"></i> Download for iPhone</a>
+                                            <a href="#" class=" down-btn color3-bg"><i class="fab fa-android"></i> Download for Android</a>
+                                        </div>
+                                    </div>
+                                    <!--process-wrap   end-->
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="collage-image">
+                                        <img src="images/api.png" class="main-collage-image" alt="">
+                                        <div class="images-collage-title color3-bg">Rent a Car<span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- section end -->
+                    <!--section -->
+
+
+                    <!-- section end -->
+                    <!--section -->
+
+                </div>
+                <!-- content end-->
+            </div>
+            <!--wrapper end -->
+            <!--footer -->
+
+            <!--footer end -->
+            <!--map-modal -->
+            <div class="map-modal-wrap">
+                <div class="map-modal-wrap-overlay"></div>
+                <div class="map-modal-item">
+                    <div class="map-modal-container fl-wrap">
+                        <div class="map-modal fl-wrap">
+                            <div id="singleMap" data-latitude="40.7" data-longitude="-73.1"></div>
+                        </div>
+                        <h3><i class="fal fa-location-arrow"></i><a href="#">Hotel Title</a></h3>
+                        <input id="pac-input" class="controls fl-wrap controls-mapwn" type="text" placeholder="What Nearby ?   Bar , Gym , Restaurant ">
+                        <div class="map-modal-close"><i class="fal fa-times"></i></div>
+                    </div>
+                </div>
+            </div>
+            <!--map-modal end -->
+            <!--register form -->
+            <div class="main-register-wrap modal">
+                <div class="reg-overlay"></div>
+                <div class="main-register-holder">
+                    <div class="main-register fl-wrap">
+                        <div class="close-reg color-bg"><i class="fal fa-times"></i></div>
+                        <ul class="tabs-menu">
+                            <li class="current"><a href="#tab-1"><i class="fal fa-sign-in-alt"></i> Login</a></li>
+                            <li><a href="#tab-2"><i class="fal fa-user-plus"></i> Register</a></li>
+                        </ul>
+                        <!--tabs -->
+                        <div id="tabs-container">
+                            <div class="tab">
+                                <!--tab -->
+                                <div id="tab-1" class="tab-content">
+                                    <h3>Sign In <span>Easy<strong>Book</strong></span></h3>
+                                    <div class="custom-form">
+                                        <form method="post"  name="registerform">
+                                            <label>Username or Email Address <span>*</span> </label>
+                                            <input name="email" type="text"   onClick="this.select()" value="">
+                                            <label >Password <span>*</span> </label>
+                                            <input name="password" type="password"   onClick="this.select()" value="" >
+                                            <button type="submit"  class="log-submit-btn color-bg"><span>Log In</span></button>
+                                            <div class="clearfix"></div>
+                                            <div class="filter-tags">
+                                                <input id="check-a" type="checkbox" name="check">
+                                                <label for="check-a">Remember me</label>
+                                            </div>
+                                        </form>
+                                        <div class="lost_password">
+                                            <a href="#">Lost Your Password?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--tab end -->
+                                <!--tab -->
+                                <div class="tab">
+                                    <div id="tab-2" class="tab-content">
+                                        <h3>Sign Up <span>Easy<strong>Book</strong></span></h3>
+                                        <div class="custom-form">
+                                            <form method="post"   name="registerform" class="main-register-form" id="main-register-form2">
+                                                <label >Full Name <span>*</span> </label>
+                                                <input name="name" type="text"   onClick="this.select()" value="">
+                                                <label>Email Address <span>*</span></label>
+                                                <input name="email" type="text"  onClick="this.select()" value="">
+                                                <label >Password <span>*</span></label>
+                                                <input name="password" type="password"   onClick="this.select()" value="" >
+                                                <button type="submit"     class="log-submit-btn color-bg"  ><span>Register</span></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--tab end -->
+                            </div>
+                            <!--tabs end -->
+                            <div class="log-separator fl-wrap"><span>or</span></div>
+                            <div class="soc-log fl-wrap">
+                                <p>For faster login or register use your social account.</p>
+                                <a href="#" class="facebook-log"><i class="fab fa-facebook-f"></i>Connect with Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--register form end -->
+            <a class="to-top"><i class="fas fa-caret-up"></i></a>
+        </div>
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOURAPIKEYHERE&libraries=places&callback=initAutocomplete"></script>
+        <script type="text/javascript" src="js/map-single.js"></script>
+    </body>
+</html>

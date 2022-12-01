@@ -1,0 +1,1019 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Easybook - Hotel Booking Directory Listing Template</title>
+	
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+		a{color:#DE6325;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+		<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<script src="js/shBrushPhp.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a href="#documenter_cover">Start - Files</a></li>
+ 
+			<li><a href="#structure">Structure</a></li>
+			<li><a href="#colors">Color</a></li>
+			<li><a href="#images">Images</a></li>
+			<li><a href="#icons">Icons</a></li>
+			<li><a href="#contact_form">Contact form</a></li>
+			<li><a href="#video">Video background</a></li>
+			<li><a href="#sub">Subscribe mailchimp</a></li>
+			<li><a href="#share">Share</a></li>
+			<li><a href="#rooms">Rooms</a></li>
+			<li><a href="#map">Map</a></li>
+			<li><a href="#twitter">Twitter</a></li>
+			<li><a href="#counter">Counter</a></li>
+			<li><a href="#weather">Weather</a></li>	
+			<li><a href="#sources_credits">Sources & Credits</a></li>
+			<li><a href="#update">Updates</a></li>
+			<li><a href="#thanks">Thanks</a></li>
+
+		</ol>
+	</div>
+	<div id="documenter_content">
+	
+	
+	
+	<section id="documenter_cover"><h1>Easybook</h1><h2> Hotel Booking Directory Listing Template</h2><hr><ul><li>Created: 18/08/2018</li><li>latest Update: 18/08/2018</li><li>By: KWST</li><li><a href="http://themeforest.net/user/kwst"></a></li><li>Email: <a href="mailto:support@kwst.net">support@kwst.net</a></li></ul>
+	<p>Thanks for purchasing tempalte and for supporting my work. Easybook - Hotel Booking Directory Listing Template. This documentation will not teach you HTML & CSS, it's just showcase of custom elements used in template.  </p> <br>
+	<p><strong style="color:red"> Very important !</strong> In order to work php scripts (contact form)- your site files must reside on the local host or server. In turn, you can easily edit any page (all JavaScript files will work).</p>
+<br><br><h3>Files</h3><hr class="notop"><br>
+<p>All site files are divided into folders:<br><br>
+<strong>css folder</strong> - css files that are responsible for the style themes.<br>
+<strong>js folder</strong> - javascript files.<br>
+<strong>php folder</strong> - php files.<br>
+<strong>video folder</strong> - video files.<br>
+<strong>room folder</strong> - room single files.<br>
+<strong>images folder</strong> - folder that contains all images.<br>
+<strong>fonts folder</strong> - folder that contains  fonts plugin "Font-Awesome".<br>
+ 
+</p>
+
+
+</section>
+<div class="clerfix"></div>
+ 
+
+
+	
+
+<section id="structure">
+<h3>Header</h3><hr class="notop">
+ 
+<p>Contains : Logo , naviagtion , search form , button "add listing" , user navigation (dashboard pages) , language menu , currency selection menu and wishlist container</p>
+ <pre class="brush: html">
+            <!-- header-->
+            <header class="main-header">
+                <!-- header-top-->
+                <div class="header-top fl-wrap">
+                    <div class="container">
+                        <div class="logo-holder">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+                        <a href="dashboard-add-listing.html" class="add-hotel">Add Your Hotel <span><i class="far fa-plus"></i></span></a>                     
+                        <div class="show-reg-form modal-open"><i class="fa fa-sign-in"></i>Sign In</div>
+                        <div class="lang-wrap">
+                            <div class="show-lang"><img src="images/lan/1.png" alt=""> <span>Eng</span><i class="fa fa-caret-down"></i></div>
+                            <ul class="lang-tooltip green-bg">
+                                <li><a href="#"><img src="images/lan/4.png" alt=""> De</a></li>
+                                <li><a href="#"><img src="images/lan/5.png" alt=""> It</a></li>
+                                <li><a href="#"><img src="images/lan/2.png" alt=""> Fr</a></li>
+                                <li><a href="#"><img src="images/lan/3.png" alt=""> Es</a></li>
+                            </ul>
+                        </div>
+                        <div class="currency-wrap">
+                            <div class="show-currency-tooltip"><i class="fas fa-dollar-sign"></i> <span>USD <i class="fa fa-caret-down"></i> </span></div>
+                            <ul class="currency-tooltip">
+                                <li><a href="#"><i class="far fa-euro-sign"></i> EUR</a></li>
+                                <li><a href="#"><i class="far fa-pound-sign"></i> GBP</a></li>
+                                <li><a href="#"><i class="far fa-ruble-sign"></i>RUR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- header-top end-->
+                <!-- header-inner-->
+                <div class="header-inner fl-wrap">
+                    <div class="container">
+                        <div class="show-search-button"><span>Search</span> <i class="fas fa-search"></i> </div>
+                        <div class="wishlist-link"><i class="fal fa-heart"></i><span class="wl_counter">3</span></div>
+                        <div class="header-user-menu">
+                            <div class="header-user-name">
+                                <span><img src="images/avatar/4.jpg" alt=""></span>
+                                My account
+                            </div>
+                            <ul>
+                                <li><a href="dashboard-myprofile.html"> Edit profile</a></li>
+                                <li><a href="dashboard-add-listing.html"> Add Listing</a></li>
+                                <li><a href="dashboard-bookings.html">  Bookings  </a></li>
+                                <li><a href="dashboard-review.html"> Reviews </a></li>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                        <div class="home-btn"><a href="index.html"><i class="fas fa-home"></i></a></div>
+                        <!-- nav-button-wrap-->
+                        <div class="nav-button-wrap color-bg">
+                            <div class="nav-button">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <!-- nav-button-wrap end-->
+                        <!--  navigation -->
+                        <div class="nav-holder main-menu">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="act-link">Home <i class="fas fa-caret-down"></i></a>
+                                        <!--second level -->
+                                        <ul>
+                                            <li><a href="index.html">Parallax Image</a></li>
+                                            <li><a href="index2.html">Slider</a></li>
+                                            <li><a href="index3.html">Video</a></li>
+                                            <li><a href="index4.html">Slideshow</a></li>
+                                        </ul>
+                                        <!--second level end-->
+                                    </li>
+                                    <li>
+                                        <a href="#">Listings <i class="fas fa-caret-down"></i></a>
+                                        <!--second level -->
+                                        <ul>
+                                            <li><a href="listing.html">Column map</a></li>
+                                            <li><a href="listing6.html">Column map 2</a></li>
+                                            <li><a href="listing2.html">Fullwidth Map</a></li>
+                                            <li><a href="listing3.html">Fullwidth Map 2</a></li>
+                                            <li><a href="listing4.html">Without Map</a></li>
+                                            <li><a href="listing5.html">Without Map 2</a></li>
+                                            <li>
+                                                <a href="#">Single <i class="fas fa-caret-down"></i></a>
+                                                <!--third  level  -->
+                                                <ul>
+                                                    <li><a href="listing-single.html">Style 1</a></li>
+                                                    <li><a href="listing-single2.html">Style 2</a></li>
+                                                    <li><a href="listing-single3.html">Style 3</a></li>
+                                                    <li><a href="listing-single4.html">Style 4</a></li>
+                                                </ul>
+                                                <!--third  level end-->
+                                            </li>
+                                        </ul>
+                                        <!--second level end-->
+                                    </li>
+                                    <li>
+                                        <a href="blog.html">News</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pages <i class="fas fa-caret-down"></i></a>
+                                        <!--second level -->
+                                        <ul>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="contacts.html">Contacts</a></li>
+                                            <li><a href="author-single.html">User single</a></li>
+                                            <li><a href="help.html">Help FAQ</a></li>
+                                            <li><a href="pricing-tables.html">Pricing</a></li>
+                                            <li><a href="booking-single.html">Booking</a></li>
+                                            <li><a href="dashboard.html">User Dashboard</a></li>
+                                            <li><a href="blog2.html">Blog Classik</a></li>
+                                            <li><a href="blog-single.html">Blog Single</a></li>
+                                            <li><a href="dashboard-add-listing.html">Add Listing</a></li>
+                                            <li><a href="404.html">404</a></li>
+                                            <li><a href="invoice.html">Invoice</a></li>
+                                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                                        </ul>
+                                        <!--second level end-->
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- navigation  end -->
+                        <!-- wishlist-wrap-->            
+                        <div class="wishlist-wrap scrollbar-inner novis_wishlist">
+                            <div class="box-widget-content">
+                                <div class="widget-posts fl-wrap">
+                                    <ul>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/gal/7.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Park Central</a>
+                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 40 JOURNAL SQUARE PLAZA, NJ, US</a></div>
+                                                <span class="rooms-price">$80 <strong> /  Awg</strong></span>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/gal/8.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Holiday Home</a>
+                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="3"></div>
+                                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 75 PRINCE ST, NY, USA</a></div>
+                                                <span class="rooms-price">$50 <strong> /   Awg</strong></span>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="#"  class="widget-posts-img"><img src="images/gal/9.jpg" class="respimg" alt=""></a>
+                                            <div class="widget-posts-descr">
+                                                <a href="#" title="">Moonlight Hotel</a>
+                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  70 BRIGHT ST NEW YORK, USA</a></div>
+                                                <span class="rooms-price">$105 <strong> /  Awg</strong></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- wishlist-wrap end--> 
+                    </div>
+                </div>
+                <!-- header-inner end-->
+                <!-- header-search -->
+                <div class="header-search vis-search">
+                    <div class="container">
+                        <div class="row">
+                            <!-- header-search-input-item -->
+                            <div class="col-sm-4">
+                                <div class="header-search-input-item fl-wrap location autocomplete-container">
+                                    <label>Destination or Hotel Name</label>
+                                    <span class="header-search-input-item-icon"><i class="fal fa-map-marker-alt"></i></span>
+                                    <input type="text" placeholder="Location" class="autocomplete-input" id="autocompleteid" value=""/>
+                                    <a href="#"><i class="fal fa-dot-circle"></i></a>
+                                </div>
+                            </div>
+                            <!-- header-search-input-item end -->
+                            <!-- header-search-input-item -->
+                            <div class="col-sm-3">
+                                <div class="header-search-input-item fl-wrap date-parent">
+                                    <label>Date In-Out </label>
+                                    <span class="header-search-input-item-icon"><i class="fal fa-calendar-check"></i></span>
+                                    <input type="text" placeholder="When" name="header-search"   value=""/>
+                                </div>
+                            </div>
+                            <!-- header-search-input-item end -->                             
+                            <!-- header-search-input-item -->
+                            <div class="col-sm-3">
+                                <div class="header-search-input-item fl-wrap">
+                                    <div class="quantity-item">
+                                        <label>Rooms</label>
+                                        <div class="quantity">
+                                            <input type="number" min="1" max="3" step="1" value="1">
+                                        </div>
+                                    </div>
+                                    <div class="quantity-item">
+                                        <label>Adults</label>
+                                        <div class="quantity">
+                                            <input type="number" min="1" max="3" step="1" value="1">
+                                        </div>
+                                    </div>
+                                    <div class="quantity-item">
+                                        <label>Children</label>
+                                        <div class="quantity">
+                                            <input type="number" min="0" max="3" step="1" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- header-search-input-item end -->                             
+                            <!-- header-search-input-item -->
+                            <div class="col-sm-2">
+                                <div class="header-search-input-item fl-wrap">
+                                    <button class="header-search-button" onclick="window.location.href='listing.html'">Search <i class="far fa-search"></i></button>
+                                </div>
+                            </div>
+                            <!-- header-search-input-item end -->                                                          
+                        </div>
+                    </div>
+                    <div class="close-header-search"><i class="fal fa-angle-double-up"></i></div>
+                </div>
+                <!-- header-search  end -->
+            </header>
+            <!--  header end -->
+
+
+</pre>
+
+ 
+ 
+ 
+ 
+ 
+
+ <h3>Wrapper </h3><hr class="notop">
+ 
+ 
+ 
+<p>Contains : Tempale code (text images etc ).</p>
+
+
+ <pre class="brush: html">
+            <!-- wrapper -->	
+            <div id="wrapper">
+                <!--content-->	
+                <div class="content">
+				
+				.........Content.......
+				
+                </div>
+                <!-- content end -->
+            </div>
+            <!-- wrapper end -->
+
+
+
+		
+</pre>
+ <h3>Footer  </h3><hr class="notop">
+ 
+ 
+ 
+ <p>Contains : about widget , contact widget , clients cariusel ,  twitter widget , last news , footer menu ,  and customer support button.</p>
+
+
+ <pre class="brush: html">
+            <!--footer -->
+            <footer class="main-footer">
+                <!--subscribe-wrap-->
+                <div class="subscribe-wrap color-bg  fl-wrap">
+                    <div class="container">
+                        <div class="sp-bg"> </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="subscribe-header">
+                                    <h3>Subscribe</h3>
+                                    <p>Want to be notified when we launch a new template or an udpate. Just sign up and we'll send you a notification by email.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5">
+                                <div class="footer-widget fl-wrap">
+                                    <div class="subscribe-widget fl-wrap">
+                                        <div class="subcribe-form">
+                                            <form id="subscribe">
+                                                <input class="enteremail fl-wrap" name="email" id="subscribe-email" placeholder="Enter Your Email" spellcheck="false" type="text">
+                                                <button type="submit" id="subscribe-button" class="subscribe-button"><i class="fas fa-rss-square"></i> Subscribe</button>
+                                                <label for="subscribe-email" class="subscribe-message"></label>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wave-bg"></div>
+                </div>
+                <!--subscribe-wrap end -->
+                <!--footer-inner-->
+                <div class="footer-inner">
+                    <div class="container">
+                        <!--footer-fw-widget-->
+                        <div class="footer-fw-widget fl-wrap">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="footer-carousel-title">
+                                        Our partners
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <!--footer-carousel-wrap-->
+                                    <div class="footer-carousel-wrap fl-wrap">
+                                        <div class="footer-carousel fl-wrap">
+                                            <!--footer-carousel-item-->
+                                            <div class="footer-carousel-item">
+                                                <a href="#"><img src="images/partners/1.png" alt=""></a>
+                                            </div>
+                                            <!--footer-carousel-item end-->
+                                            <!--footer-carousel-item-->
+                                            <div class="footer-carousel-item">
+                                                <a href="#"><img src="images/partners/2.png" alt=""></a>
+                                            </div>
+                                            <!--footer-carousel-item end-->                             
+                                            <!--footer-carousel-item-->
+                                            <div class="footer-carousel-item">
+                                                <a href="#"><img src="images/partners/3.png" alt=""></a>
+                                            </div>
+                                            <!--footer-carousel-item end-->
+                                            <!--footer-carousel-item-->
+                                            <div class="footer-carousel-item">
+                                                <a href="#"><img src="images/partners/4.png" alt=""></a>
+                                            </div>
+                                            <!--footer-carousel-item end-->      
+                                            <!--footer-carousel-item-->
+                                            <div class="footer-carousel-item">
+                                                <a href="#"><img src="images/partners/5.png" alt=""></a>
+                                            </div>
+                                            <!--footer-carousel-item end-->
+                                            <!--footer-carousel-item-->
+                                            <div class="footer-carousel-item">
+                                                <a href="#"><img src="images/partners/6.png" alt=""></a>
+                                            </div>
+                                            <!--footer-carousel-item end-->                                     
+                                        </div>
+                                        <div class="fc-cont  fc-cont-prev"><i class="fal fa-angle-left"></i></div>
+                                        <div class="fc-cont  fc-cont-next"><i class="fal fa-angle-right"></i></div>
+                                    </div>
+                                    <!--footer-carousel-wrap end-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--footer-fw-widget end-->
+                        <div class="row">
+                            <!--footer-widget -->
+                            <div class="col-md-4">
+                                <div class="footer-widget fl-wrap">
+                                    <h3>About Us</h3>
+                                    <div class="footer-contacts-widget fl-wrap">
+                                        <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. </p>
+                                        <ul  class="footer-contacts fl-wrap">
+                                            <li><span><i class="fal fa-envelope"></i> Mail :</span><a href="#" target="_blank">yourmail@domain.com</a></li>
+                                            <li> <span><i class="fal fa-map-marker-alt"></i> Adress :</span><a href="#" target="_blank">USA 27TH Brooklyn NY</a></li>
+                                            <li><span><i class="fal fa-phone"></i> Phone :</span><a href="#">+7(111)123456789</a></li>
+                                        </ul>
+                                        <div class="footer-social">
+                                            <span>Find us : </span>
+                                            <ul>
+                                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--footer-widget end-->
+                            <!--footer-widget -->
+                            <div class="col-md-4">
+                                <div class="footer-widget fl-wrap">
+                                    <h3>Our Last News</h3>
+                                    <div class="widget-posts fl-wrap">
+                                        <ul>
+                                            <li class="clearfix">
+                                                <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
+                                                <div class="widget-posts-descr">
+                                                    <a href="#" title="">Vivamus dapibus rutrum</a>
+                                                    <span class="widget-posts-date"> 21 Mar 09.05 </span>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <a href="#"  class="widget-posts-img"><img src="images/all/2.jpg" class="respimg" alt=""></a>
+                                                <div class="widget-posts-descr">
+                                                    <a href="#" title=""> In hac habitasse platea</a>
+                                                    <span class="widget-posts-date"> 7 Mar 18.21 </span>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <a href="#"  class="widget-posts-img"><img src="images/all/3.jpg" class="respimg" alt=""></a>
+                                                <div class="widget-posts-descr">
+                                                    <a href="#" title="">Tortor tempor in porta</a>
+                                                    <span class="widget-posts-date"> 7 Mar 16.42 </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--footer-widget end-->
+                            <!--footer-widget -->
+                            <div class="col-md-4">
+                                <div class="footer-widget fl-wrap">
+                                    <h3>Our  Twitter</h3>
+                                    <div id="footer-twiit" class="fl-wrap"></div>
+                                    <a href="#" class="twitter-link" target="_blank">Follow</a>
+                                </div>
+                            </div>
+                            <!--footer-widget end-->
+                        </div>
+                        <div class="clearfix"></div>
+                        <!--footer-widget -->
+                        <div class="footer-widget">
+                            <div class="row">
+                                <div class="col-md-4"><a class="contact-btn color-bg" href="contacts.html">Get In Touch<i class="fal fa-envelope"></i></a></div>
+                                <div class="col-md-8">
+                                    <div class="customer-support-widget fl-wrap">
+                                        <h4>Customer support : </h4>
+                                        <a href="tel:+19012300888" class="cs-mumber">+1(901)2300888</a>
+                                        <a href="tel:+19012300888" class="cs-mumber-button color2-bg">Call Now <i class="far fa-phone-volume"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--footer-widget end -->
+                    </div>
+                </div>
+                <!--footer-inner end -->
+                <div class="footer-bg">
+                </div>
+                <!--sub-footer-->
+                <div class="sub-footer">
+                    <div class="container">
+                        <div class="copyright"> &#169; EasyBook 2018 .  All rights reserved.</div>
+                        <div class="subfooter-lang">
+                            <div class="subfooter-show-lang"><span>Eng</span><i class="fa fa-caret-up"></i></div>
+                            <ul class="subfooter-lang-tooltip">
+                                <li><a href="#">Dutch</a></li>
+                                <li><a href="#">Italian</a></li>
+                                <li><a href="#">French</a></li>
+                                <li><a href="#">Spanish</a></li>
+                            </ul>
+                        </div>
+                        <div class="subfooter-nav">
+                            <ul>
+                                <li><a href="#">Terms of use</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--sub-footer end -->
+            </footer>
+            <!--footer end -->
+
+
+</pre>
+
+
+ 
+ </section>	
+ <section id="colors">
+<h3>Colors</h3>
+<p>By default, 'Easybook' has uses three colors - light blue (#3AACED) , dark-blue(#18458B) and orange (#F9B90F).<strong>To change the color, you must do the following steps:</strong>
+<br>
+1. Locate the folder css  file <strong>color.css</strong> and open it with your text editor.	
+<br>
+2.In this file, you should find a line responsible for the color theme. Look at the code below.
+<br>
+3. Just replace the six numbers and letters after the lattice in the file "color.css". Forgot to mention the theme color using hex format. If you want to add color format "rgba" then need to remove the lattice. If you do not know where to find the code of the color you click on this <a href="http://www.color-hex.com/color-palettes/" target="_blank">link</a>.</p>
+
+<pre class="brush: css">
+@charset "utf-8";
+/*--
+	Color styles
+--*/
+.show-lang i  , .nav-holder nav li a i  , .filter-tags input:checked:after , .custom-form  .filter-tags input:checked:after , .main-register h3 span , .lost_password a:hover  , .header-search-input-item.location a , .pac-icon:before , .footer-social li a  , .cs-mumber , .show-search-button i , .show-сurrency-tooltip span i , .show-reg-form i , .header-user-name:before    , .tabs-menu  li.current a , .currency-tooltip li i , .currency-wrap  .show-currency-tooltip i , .subfooter-lang-tooltip li a   ,.header-search-input-item.in-loc-dec:before , .col-list-search-input-item.location a , .col-list-search-input-item.in-loc-dec:before , .list-main-wrap-title h2 span , .grid-opt li span.act-grid-opt  , .grid-opt li span.act-grid-opt:hover , .price-opt ul li  a:hover  , .geodir-category-content h3 a:hover , .geodir-category-opt  .js-favorite i ,   .avatar-tooltip strong  , .listing-title a , .map-popup-location-price  , .nice-select .nice-select-search-box:before  , .map-modal-container h3 a:hover, .category-fix-bg-title h4  , .geodir-opt-tooltip strong , .facilities-list li i:hover  , .to-top:hover , .section-title .breadcrumbs a:before   , .list-single-header-contacts li i ,  .share-container  .share-icon:hover:before  , .breadcrumbs-hero-buttom  .breadcrumbs a:before  , .listing-features li i ,   .rooms-details-header h5 span , .inline-facts i , .ajax-modal-photos-btn span , .ajax-modal-list li i , .total-coast span , .custom-form .total-coast  input , .bookdate-container-dayscounter i , .box-widget-list  li i , .list-single-main-item-title:before , .box-widget-item-header:before , .fc-button i , .share-container  .share-icon  , .reviews-comments-item-date i , .custom-form .review-total span input , .flatWeatherPlugin ul.wiForecasts li , .box-widget-list  li a:hover ,  .list-single-main-item-title h3 span , .claim-widget-link a  , .mapnavigation a i  , .list-single-hero-header .list-single-hero-price span  , .breadcrumbs.inline-breadcrumbs a:before , .box-widget-content  .widget-posts-descr  .geodir-category-location a i  , .box-widget-content .widget-posts-link i   , .tfp-btn strong , .dashboard-message-text p a , .dasboard-menu li a.user-profile-act  i  , .dasboard-menu li a:hover i  , .pass-input-wrap span  , .radio input[type="radio"]:checked + span:before , .custom-form .radio span , .reply-mail a  , .tfp-det p a , .chat-contacts-item .chat-contacts-item-text span    , .reviews-comments-item-text h4 a.reviews-comments-item-link , .video-box-btn  , .text-carousel .slick-center .text-carousel-item:after  , .text-carousel .slick-center .text-carousel-item:before ,   .single-facts .inline-facts i , .team-social li  a , .team-dec , .filter-tags label a  , .breadcrumbs-fs .breadcrumbs span , .home-btn a , .cart_list li span , #progressbar li:before , .log-massage a  , .cat-item  li a  , .post-link i , .card-post-content h3:before , .card-post-content h3 a:hover ,   .post-opt li a:hover  , .wishlist-link  , .box-widget-content .widget-posts-descr a:hover  , .faq-nav li a.act-faq-link , .time-line-icon i   , s .listing-counter span  , .images-collage-title , .down-btn i , .qty-dropdown-content .quantity-item label i , .qty-dropdown-header:before , .main-search-input-item_small:before , .main-search-input-item.location a , .listing-counter strong , .weather-grid .flatWeatherPlugin .wiToday .wiIconGroup div.wi  , .geodir-category-price span , .show-search-button:hover i , .hotel-card .geodir-category-location a i ,  .header-search-input-item.date-parent:before , .menusb  a i  , .menusb a.back:before , .footer-contacts li a:hover , #footer-twiit a:hover , .dasboard-menu-btn i , .header-user-menu li a:hover  , .dashboard-listing-table-text h4 a , .mlc i , .show-more-filters i{
+	color:#3AACED;
+}
+.color-bg ,  .close-header-search:hover  , #footer-twiit p.tweet:before  , .cs-mumber-button:hover , .tabs-menu  li a  , .review-range-container .irs-bar , .review-range-container .irs-bar-edge , .search-input-item .irs-line , .col-list-search-input-item .irs-line,  .pagination  a.current-page  , .pagination  a.current-page:hover ,    .mapnavigation a:hover    , .back-to-filters span , .infoBox-close , .slick-dots li.slick-active button ,   .map-modal-close  , .geodir-opt-link a , .cluster div:hover  , .to-top , .daterangepicker td.active  , .list-single-hero-title h2:before  , .user-stats:before , .ed-btn:hover ,  .dashboard-header ,   .massage-date span:before , .chat-contacts-item:after ,
+.lisd-link:hover , .scroll-nav-wrapper .scroll-nav  li  a.act-scrlink  ,  .accordion a.toggle span , .list-widget-social li a , .box-item a.gal-link , .message-input button , .message-counter , .line-separator:before  , .intro-item h2:before  , .section-separator:before  , #progressbar li:before , .price-num.col-dec-1:before , .tags-stylwrap.sb-tags a , .geodir-opt-list a:hover , .main-search-button:hover  , .twitter-link  , .recomm-price i , .lg-actions .lg-next, .lg-actions .lg-prev{
+	background:#3AACED;
+}
+.pin , .nice-select:after ,  .ajax-loader  , .ed-btn     , blockquote  {
+	border-color:#3AACED;
+} 
+/*--
+	orange
+--*/ 
+.nav-holder nav li a.act-link , .nav-holder nav li a:hover  , .main-register h3 span strong , .header-search-input-item-icon , .subfooter-show-lang i   , #footer-twiit  .timePosted a:before  , .footer-contacts li i , .fc-cont:hover , .custom-form label span , .section-title-separator span i:nth-child(2) , .five-star-rating .listing-rating   i , .four-star-rating .listing-rating   i , .three-star-rating .listing-rating   i , .grid-opt li span:hover , .price-opt ul li  a i ,  .geodir-category-opt .listing-rating i , .geodir-category-opt  .js-favorite:hover i  , .geodir-category-location a  i  , .map-card-rainting i , .map-popup-location-info i , .daterangepicker .calendar-table th , .listing-rating i   , .rooms-details-header h5   , .custom-form label i , .nice-select:before , .amenities-list li span.status.status-no , .flatWeatherPlugin ul.wiForecasts li.wi  ,   .widget-posts-date i , .claim-widget-link a:hover , .mapzoom-in    , .dashboard-list-box.activities  .dashboard-message-text i , .fuzone .fu-text i , .dashboard-message-text h4 span , .tfp-btn:before  , .process-wrap li i ,   .singleMap_visible-title-item h4 i  , .flat-title-wrap .breadcrumbs a:before , .breadcrumbs-fs .breadcrumbs a:before , .log-massage a:hover , .cart-total strong , .post-opt li i , .cat-item  li  span , .post-link , .faq-nav li a.act-faq-link:before  , .faq-nav li a:hover:before  , .process-item h4 a:hover , .intro-item h6  , .collage-image-input i , .inpt_dec , .qty-dropdown-header i ,  .geodir-category-opt h4 a:hover , .map-modal-container h3 i , .header-user-name:hover , .show-reg-form:hover  , .home-btn:hover a , .menusb  a.act-link , .footer-social li a:hover , .dashboard-listing-table-text h4 a:hover , .dashboard-listing-table-address i , .map-close, .text-carousel-item a.testim-link:hover {
+	color:#F9B90F;
+}
+.color2-bg  ,   .header-search-button , .pac-item:hover , .close-header-search , .footer-widget #subscribe-button:hover  ,  .cs-mumber-button , .irs-slider   , .pagination  a:hover , .cluster div  , .infoBox-close:hover  , .show-more-filters.active-hidden-opt-btn  , .load-more-button:hover , .daterangepicker .drp-buttons .btn.btn-default  , .header-sec-link  a:hover , .scroll-nav-wrapper .show-hidden-map  , .ajax-loader-cirle:before , .dashboard-list-box.activities .new-dashboard-item:hover , .dasboard-menu li a span , .dasboard-menu li ul li span  , .text-carousel-wrap .sw-btn , .price-link:hover , .price-num.col-dec-3:before , section.color-bg .section-separator:before  , .add-hotel:hover , .success-table-header a:hover , .dashboard-listing-table-opt li  a.del-btn  {
+	background:#F9B90F;
+}
+/*--
+	dark-blue
+--*/
+ 
+.accordion a.toggle.act-accordion , .banner-wdget-content a , .box-image-widget-media a:hover , .rooms-media-btn-item , .sw-btn , .bt n:hover  , .more-photos-button , .box-item a.gal-link:hover , .dasboard-sidebar-content , .tfp-det-btn:hover  , .color3-bg , .team-social , .text-carousel-wrap .sw-btn:hover , .home-intro-card-counter  , .mlc , .geodir-opt-tooltip , .custom-form .log-submit-btn , .lg-actions .lg-next:hover, .lg-actions .lg-prev:hover , .error-wrap form  .search-submit:hover , .close-reg:hover  , .custom-form .log-submit-btn:hover , .soc-log a:hover {
+	background: #18458B;
+} 
+.mapzoom-out , .single-facts .inline-facts .num , .section-title h2 ,.singleMap_visible-title-item h4  , .card-post-content h3 a , .map-modal-container h3 a , .error_message  h3  , #success_page h3 , .text-carousel-item a.testim-link {
+	color:#18458B;
+}
+/*--
+	gradient
+--*/
+.gradient-bg {
+  background-color: #3AACED;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3AACED), to(#49CEFF));
+  background: -webkit-linear-gradient(top, #3AACED, #49CEFF);
+  background: -moz-linear-gradient(top, #3AACED, #49CEFF);
+  background: -ms-linear-gradient(top, #3AACED, #49CEFF);
+  background: -o-linear-gradient(top, #3AACED, #49CEFF);
+}
+
+</pre>
+
+</section>
+
+
+<section id="images">	
+<h3>Images</h3><hr class="notop">
+<p>All images are in the folder "images".<br>       
+</p>
+<br>
+<h3>How to add and change the background image</h3>
+
+<p>To change the background you can simply change the path in the style rendered in html code, for example : </p>
+<pre class="brush: html">
+ 
+<div class="bg"  data-bg="images/bg/1.jpg"></div>
+	
+</pre>
+ 
+
+  
+</section>
+
+<section id="icons">
+	<h3>Icons</h3><hr class="notop">
+<p>	All  icons are generated by the plugin <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">"Font-Awesome"</a>. List of all the icons can be found <a href="https://fontawesome.com/icons?d=gallery" target="_blank">here</a>. 
+<br>
+To change the icon, you have to copy and paste the code icon at the right place for you. 
+
+</p>
+<p>For example: </p>
+<pre class="brush: html">
+
+<i class="far fa-ambulance"></i>
+
+</pre>
+
+<p>&nbsp;
+	</p>
+</section>
+
+ 
+
+<section id="contact_form">
+	<h3>Contact Form</h3><hr class="notop">
+<p>
+Find the file "contact" in the folder <strong>php</strong> . In this file, find the line <strong style="color:red">$to_Email = "myemail@gmail.com";</strong> and add you e-mail.</p> 
+<p>How to forward mail to your mailbox ask your Hosting Service Provider. Because providers use different control panel site and I find it hard to predict what you use. Server side script for sending emails is in "contact.php" . Ajax submit is initialized in "scripts.js" file.</p>
+<p>&nbsp;
+	</p>
+	
+<pre class="brush: js">
+	// contact form ------------------
+    $("#contactform").submit(function() {
+        var a = $(this).attr("action");
+        $("#message").slideUp(750, function() {
+            $("#message").hide();
+            $("#submit").attr("disabled", "disabled");
+            $.post(a, {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                comments: $("#comments").val()
+            }, function(a) {
+                document.getElementById("message").innerHTML = a;
+                $("#message").slideDown("slow");
+                $("#submit").removeAttr("disabled");
+                if (null != a.match("success")) $("#contactform").slideDown("slow");
+            });
+        });
+        return false;
+    });
+    $("#contactform input, #contactform textarea").keyup(function() {
+        $("#message").slideUp(1500);
+    });
+
+</pre>
+</section>
+
+
+
+<section id="video">
+<h3>Video</h3><hr class="notop">
+
+
+<p>This template uses Youtube Vimeo and html5  video as background . To add your video  in html file find line :</p>
+<strong>Youtube</strong>
+<pre class="brush: html">
+ 
+<div  class="background-youtube-wrapper" data-vid="oDpSPNIozt8" data-mv="1"> </div>
+</pre>
+<p>add you video id  in<strong> data-vid=""</strong> if you want add sound change data-mv="1" on data-mv="0" </p>
+<strong>Html5</strong>
+<pre class="brush: html">
+                                        <video autoplay  loop muted  class="bgvid">
+                                            <source src="video/1.mp4" type="video/mp4">
+                                        </video>
+
+</pre>
+<p>add you video id  in source <strong> src="video/1.mp4" type="video/mp4" </strong> </p>
+
+<strong>VImeo</strong>
+<pre class="brush: html">
+  <div  class="background-vimeo" data-vim="97871257"> </div>
+
+</pre>
+<p>add you video id  in source <strong> data-vim="97871257" </strong> </p>
+
+<p>And yet the video does not play on smartphones :( - so if a user comes to your site from a mobile browser - the background is replaced by a picture :)</p>
+ 
+ 
+
+ 
+
+
+ </section>	
+	
+<section id="sub">
+<h3>Subscribe mailchimp</h3><hr class="notop">
+
+ 
+<p>  To set up the subscription form, you must perform the following steps :</p>
+<p>
+1. Sign up  on <a href="http://mailchimp.com/" target="_blank">mailchimp</a> . It's free.	
+<br>
+2. Next, open the 	  <strong style="color:red">Lists --- Signup forms --- Embedded forms </strong> 
+<br>
+3. Locate the folder js  file <strong>scripts.js</strong> and open it with your text editor.	
+<br>
+4.In this file, you should find a code :
+<br>
+ </p>
+<pre class="brush: js">
+//=============== subscribe form  ==============
+    // Example MailChimp url: http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
+ 
+    $('#subscribe').ajaxChimp({
+        language: 'eng',
+        url: 'http://kwst.us9.list-manage1.com/subscribe/post?u=992ebe1f14864e841317ca145&id=163340d9c8'
+    });
+
+    // Mailchimp translation
+    //
+    // Defaults:
+    //'submit': 'Submitting...',
+    //  0: 'We have sent you a confirmation email',
+    //  1: 'Please enter a value',
+    //  2: 'An email address must contain a single @',
+    //  3: 'The domain portion of the email address is invalid (the portion after the @: )',
+    //  4: 'The username portion of the email address is invalid (the portion before the @: )',
+    //  5: 'This email address looks fake or invalid. Please enter a real email address'
+
+    $.ajaxChimp.translations.eng = {
+        'submit': 'Submitting...',
+        0: '<i class="fa fa-check"></i> We will be in touch soon!',
+        1: '<i class="fa fa-warning"></i> You must enter a valid e-mail address.',
+        2: '<i class="fa fa-warning"></i> E-mail address is not valid.',
+        3: '<i class="fa fa-warning"></i> E-mail address is not valid.',
+        4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
+        5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
+    }
+</pre>
+ 
+<p> 5.In the form  <strong style="color:red">Copy/paste onto your site </strong> copy code <strong style="color:red">"http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx" </strong> copy of the code and substitute your own values instead "xxx"  For example : </p>
+
+<pre class="brush: js">
+
+ 
+    $('#subscribe').ajaxChimp({
+        language: 'eng',
+        url: 'http://kwst.us9.list-manage1.com/subscribe/post?u=992ebe1f14864e841317ca145&id=163340d9c8'
+    });
+
+</pre>
+
+ </section>	
+
+
+<section id="share">
+<h3>Share your pages</h3><hr class="notop">
+<p>To configure the plugin  in file scripts.js  find line :</p>
+<pre class="brush: js"> 		
+        networks: [ "facebook", "pinterest", "googleplus", "twitter", "linkedin" ]
+</pre>
+<p>You can simply add a comma in line: <strong>social: 'facebook','pinterest','googleplus','twitter','linkedin' 'foursquare' , 'flickr', 'digg' , 'tumblr', 'vimeo' , 'stumbleupon'</strong>  separated names of social networks .  </p>
+</section>
+
+
+<section id="rooms">
+<h3>Ajax Rooms</h3><hr class="notop">
+<p>The room files are in the folder "rooms" . This content is  loaded using Ajax so use the server for editing . You can add as many rooms as you like . 
+ 
+To display the room, use the following reference code</p>
+<pre class="brush: html"> 		
+	<a href="rooms/room.html" class="btn color-bg ajax-link">Details<i class="fas fa-caret-right"></i></a>
+</pre>
+<p>A link can have any kind of code - the main thing is that it contains the path to the files and  class <strong>ajax-link</strong> </p>
+</section> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <section id="map">
+<h3>Map Single</h3><hr class="notop">
+<p>To configure the single  map   in  HTML file  find code :</p>
+<pre class="brush: html"> 		
+<div id="singleMap" data-latitude="40.7427837" data-longitude="-73.11445617675781"></div>
+	
+</pre>
+
+<p> And add your own values data-latitude="40.7427837" data-longitude="-73.11445617675781". To find the coordinates - visit this <a href="http://www.mapcoordinates.net/en" target="_blank"><strong style="color:red">link</strong></a>  </p>
+
+
+<p>Show on the map (popup map) . Add coordinates in <strong>data-newlatitude="40.72956781" data-newlongitude="-73.99726866"</strong>
+<br>
+Example:
+</p>
+<pre class="brush: html"> 		
+<a href="#" class="single-map-item" data-newlatitude="40.72956781" data-newlongitude="-73.99726866"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map</span></a>
+
+	
+</pre>
+
+
+
+
+
+<h3>Map Listing</h3><hr class="notop">
+
+<p>To configure the Listing  map   in   file maps.js  find code :</p>
+<pre class="brush: js"> 		
+        var locations = [
+            [locationData('listing-single2.html', 'images/gal/8.jpg', 'Premium Plaza Hotel', "1327 Intervale Ave, Bronx, NY, USA", "$ 320", "5"), 40.72956781, -73.99726866, 0, markerIcon],
+            [locationData('listing-single.html', 'images/gal/4.jpg', 'Grand Hero Palace', "W 85th St, NY, USA ", "$ 120", "4"), 40.76221766, -73.96511769, 1, markerIcon],
+            [locationData('listing-single.html', 'images/gal/6.jpg', 'Park Central', "40 Journal Square Plaza, NJ,  USA", "$ 50", "5"), 40.88496706, -73.88191222, 2, markerIcon],
+            [locationData('listing-single.html', 'images/gal/2.jpg', 'Holiday Home', "75 Prince St,  NY, USA", "$ 50", "3"), 40.72228267, -73.99246214, 3, markerIcon],
+            [locationData('listing-single.html', 'images/gal/3.jpg', 'Gold Plaza Hotel', "34-42 Montgomery St, New York, NY", "$ 210", "5"), 40.94982541, -73.84357452, 4, markerIcon],
+            [locationData('listing-single.html', 'images/gal/5.jpg', 'Moonlight Hotel', "70 Bright St, Jersey City, NJ", "$ 105", "4"), 40.90261483, -74.15737152, 5, markerIcon],
+            [locationData('listing-single.html', 'images/gal/1.jpg', 'Zebra Premium Hotel', "123 School St. Lynchburg, NY ", "$ 115", "3"), 40.79145927, -74.08252716, 6, markerIcon],
+            [locationData('listing-single2.html', 'images/gal/7.jpg', 'Fancy Hotel', "Mt Carmel Pl, New York, NY", "$70", "5"), 40.58423508, -73.96099091, 7, markerIcon],
+            [locationData('listing-single2.html', 'images/gal/9.jpg', 'Luxary Hotel-Spa', "1-30 Hunters Point Ave, Long Island City, NY", "$320", "5"), 40.58110616, -73.97678375, 8, markerIcon],
+            [locationData('listing-single3.html', 'images/gal/4.jpg', 'NY Plaza Hotel', "726-1728 2nd Ave, New York, NY", "$ 120", "5"), 40.73112881, -74.07897948, 9, markerIcon],
+            [locationData('listing-single3.html', 'images/gal/5.jpg', 'Apartment Hotel-Spa', "9443 Fairview Ave, North Bergen, NJ", "$ 210", "4"), 40.67386831, -74.10438536, 10, markerIcon],
+        ];	
+</pre>
+<p>Options : <br>
+1.<strong>'listing-single2.html' </strong> - link To single listing.<br>
+2.<strong>'images/gal/8.jpg' </strong> - path to image.<br>
+3.<strong>'Premium Plaza Hotel' </strong> - listing name.<br>
+4.<strong>'1327 Intervale Ave, Bronx, NY, USA' </strong> - address.<br>
+5.<strong>'$ 320' </strong> - price.<br>
+6.<strong>'5' </strong> - stars.<br>
+7.<strong>'40.72956781' </strong> - longitude.<br>
+8.<strong>'-73.99726866' </strong> -latitude.<br>
+9.<strong>'0' </strong> - id  for function "Show on the map".<br>
+</p>
+
+
+
+
+
+
+
+
+<p>Next step you need api key  . To find key visit this  <a href="https://developers.google.com/maps/documentation/javascript/get-api-key"><strong style="color:red">link</strong></a> . And add your key in each page in code :
+
+ </p>
+ <pre class="brush: html">
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initAutocomplete"></script>  
+
+</pre>
+</section>
+<section id="twitter">
+<h3>Twitter</h3><hr class="notop">
+<p>To configure the plugin  in file scripts.js find code :</p>
+<pre class="brush: js"> 		
+	if ($("#header-twitts").length > 0) {	
+		var config1 = {
+		  "profile": {"screenName": 'katokli3mmm'},
+		  "domId": 'footer-twiit',
+		  "maxTweets": 5,
+		  "enableLinks": true,
+		  "showImages": false
+		};
+		twitterFetcher.fetch(config1);	
+	}
+</pre>
+<p>Add your profile  name in line  in line: <strong>"profile": {"screenName": 'katokli3mmm'}</strong> . To add more 5 twitts - change value "maxTweets": 5,</p>
+</section>
+ 
+
+<section id="counter">
+<h3>Counter</h3><hr class="notop">
+<p>To configure the date  in html file   find code :</p>
+<pre class="brush: js"> 		
+<div class="box-widget counter-widget gradient-bg" data-countDate="09/12/2019">
+</pre>
+<p>Add your  your date in  : <strong>data-countDate="09/12/2019"</strong> .</p>
+</section>
+ 
+ 
+<section id="weather">
+<h3>Weather</h3><hr class="notop">
+<p>To configure widget for grid  in html file   find code :</p>
+<pre class="brush: js"> 		
+<div class="weather-grid"   data-grcity="Rome"></div>
+
+</pre>
+<p>Add your  your city in  : <strong>data-grcity="Rome"</strong> .</p>
+<p>To configure single widget in html file   find code :</p>
+<pre class="brush: js"> 		
+<div id="weather-widget" class="gradient-bg" data-city="New York" data-country="USA"></div>
+
+
+</pre>
+<p>Add your  your city in  : <strong>data-city="New York"</strong> .</p>
+</section>
+ 
+ 
+ 
+
+<section id="sources_credits">
+	<h3>Sources & Credits</h3><hr class="notop">
+<p>
+	<strong>Fonts</strong><br>
+	http://www.google.com/fonts<br>
+	<br><br>
+	
+	
+	<strong>Images</strong><br>
+	Shutterstock<br>
+	http://www.shutterstock.com/
+	<br><br>
+ 
+ 	
+	</p>
+
+<p>
+	<strong>Icons</strong><br>
+		Font-Awesome<br>
+	http://fortawesome.github.io/Font-Awesome/</p>
+
+
+
+<p>
+<strong>Javascripts </strong><br><br>
+
+	<strong>JQuery</strong><br>
+	http://jquery.com</p>
+<p>
+	<strong>JQuery Easing</strong><br>
+	http://gsgd.co.uk/sandbox/jquery/easing/</p>
+<p>
+	<strong>Slick Carousel</strong><br>
+	http://kenwheeler.github.io/slick/</p>
+ 
+
+	<p>
+	<strong>isotope</strong><br>
+	http://isotope.metafizzy.co/</p>
+ 	
+	
+		<p>
+	<strong> Lightgallery</strong><br>
+	http://sachinchoolur.github.io/lightGallery/</p>	
+	
+ 
+	
+</section>
+ 
+
+
+<section id="update">
+<h3>Updates</h3><hr class="notop">
+
+
+
+ </section>	
+<section id="thanks">
+	<h3>Thanks</h3><hr class="notop">
+<p>
+	Thanks for purchasing template and for supporting my work. If we fail here in this documentation, please e-mail me  <a href="mailto:support@kwst.net">support@kwst.net</a>. If you have a spare time, please go and rate my template. I will apreciate that.</p>
+<p>
+	Thanks</p>
+</section>
+
+	</div>
+</body>
+</html>
